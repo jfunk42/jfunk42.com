@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Podcast Quizzes | jFunk42</title>
+  <meta
+    name="description"
+    content="Multiple-choice quizzes based on recent Science Brief podcast episodes."
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <p class="eyebrow">jFunk42.com</p>
+      <h1>Podcast quizzes</h1>
+      <p class="lead">
+        Check what you learned from recent Science Brief episodes, then follow the source data
+        behind each correct answer.
+      </p>
+      <a class="home-link" href="../">Back to jFunk42.com</a>
+    </header>
+
+    <p id="load-status" class="load-status" aria-live="polite">Loading quizzes...</p>
+
+    <div id="quiz-content" hidden>
+      <section class="quiz-card" aria-labelledby="quiz-title">
+        <p id="quiz-date" class="quiz-date"></p>
+        <h2 id="quiz-title"></h2>
+        <p id="quiz-description" class="quiz-description"></p>
+        <p id="spotify-episode" class="spotify-episode" hidden>
+          <a target="_blank" rel="noreferrer">Listen to this episode on Spotify</a>
+        </p>
+        <div id="questions" class="questions"></div>
+      </section>
+
+      <section class="catalog-card">
+        <h2>Find a quiz</h2>
+        <label class="search-label" for="quiz-search">Search all quizzes</label>
+        <input
+          id="quiz-search"
+          type="search"
+          placeholder="Search by title, topic, or keyword"
+          autocomplete="off"
+        >
+        <p id="search-count" class="search-count"></p>
+        <ul id="search-results" class="quiz-links" aria-live="polite"></ul>
+      </section>
+
+      <section class="catalog-card">
+        <h2>Recent quizzes</h2>
+        <ul id="recent-quizzes" class="quiz-links"></ul>
+      </section>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
