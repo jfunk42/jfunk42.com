@@ -10,6 +10,7 @@ const elements = {
   quizDate: document.querySelector("#quiz-date"),
   quizDescription: document.querySelector("#quiz-description"),
   spotifyEpisode: document.querySelector("#spotify-episode"),
+  episodeTranscript: document.querySelector("#episode-transcript"),
   questions: document.querySelector("#questions"),
   searchInput: document.querySelector("#quiz-search"),
   searchCount: document.querySelector("#search-count"),
@@ -152,6 +153,10 @@ function renderSelectedQuiz() {
   const hasSpotifyEpisode = typeof quiz.spotifyUrl === "string";
   elements.spotifyEpisode.hidden = !hasSpotifyEpisode;
   spotifyLink.href = hasSpotifyEpisode ? quiz.spotifyUrl : "";
+  const transcriptLink = elements.episodeTranscript.querySelector("a");
+  const hasTranscript = typeof quiz.transcriptUrl === "string";
+  elements.episodeTranscript.hidden = !hasTranscript;
+  transcriptLink.href = hasTranscript ? quiz.transcriptUrl : "";
   renderQuestions(quiz);
 }
 
@@ -177,6 +182,10 @@ function isValidQuiz(quiz) {
     && (quiz.spotifyUrl === undefined || (
       typeof quiz.spotifyUrl === "string"
       && /^https:\/\/open\.spotify\.com\/episode\/[A-Za-z0-9]+(?:\?.*)?$/.test(quiz.spotifyUrl)
+    ))
+    && (quiz.transcriptUrl === undefined || (
+      typeof quiz.transcriptUrl === "string"
+      && /^https:\/\/jfunk42\.com\/podcasts\/science-brief\/transcripts\/[^/]+\.html$/.test(quiz.transcriptUrl)
     ))
     && Array.isArray(quiz.tags)
     && Array.isArray(quiz.questions)

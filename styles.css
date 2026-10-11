@@ -234,6 +234,12 @@ h1 {
   margin-top: 10px;
 }
 
+.transcript-content {
+  white-space: pre-wrap;
+  color: var(--text);
+  line-height: 1.7;
+}
+
 @media (max-width: 640px) {
   .page {
     padding: 24px 16px 48px;
