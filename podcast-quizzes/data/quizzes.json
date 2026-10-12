@@ -1,5 +1,106 @@
 [
   {
+    "title": "Deep Time Survival: New Fossil and Chemical Clues to Early Hominin Adaptations",
+    "publishedAt": "2026-10-12",
+    "description": "Recent scientific discoveries reveal that Homo erectus appeared in southern Africa 200,000 years earlier than previously thought while Neanderthals produced birch tar capable of inhibiting dangerous wound infections.",
+    "tags": [
+      "paleoanthropology",
+      "human evolution",
+      "prehistoric technology",
+      "Neanderthals"
+    ],
+    "questions": [
+      {
+        "question": "How did the fossil discovery at Drimolen Cave in South Africa alter scientists' understanding of Homo erectus?",
+        "choices": [
+          {
+            "text": "It pushed back the estimated presence of Homo erectus in southern Africa by approximately 200,000 years to about 2 million years ago.",
+            "correct": true,
+            "explanation": "Dating of an adult Homo erectus skull fragment found among 18 hominin fossils at Drimolen Cave established that the species lived in southern Africa roughly 2 million years ago, 200,000 years earlier than previously recognized.",
+            "source": {
+              "label": "Scientists found Homo erectus 200,000 years earlier than expected",
+              "url": "https://www.sciencedaily.com/releases/2026/10/261007042113.htm"
+            }
+          },
+          {
+            "text": "It proved that Homo erectus was the only hominin species occupying southern Africa 2 million years ago.",
+            "correct": false,
+            "explanation": "The fossil deposits at Drimolen Cave show that Paranthropus robustus coexisted alongside Homo erectus in the region during the same time period."
+          },
+          {
+            "text": "It revealed that Homo erectus evolved unusually large teeth and chewing muscles to adapt to dietary stress.",
+            "correct": false,
+            "explanation": "It was Paranthropus robustus, not Homo erectus, that evolved larger teeth and stronger jaw muscles to process tough plant material."
+          },
+          {
+            "text": "It demonstrated that Homo erectus produced birch tar for hafting stone tools in South Africa.",
+            "correct": false,
+            "explanation": "Birch tar production and its antibacterial properties were investigated in relation to Neanderthals, not Homo erectus."
+          }
+        ]
+      },
+      {
+        "question": "How did Paranthropus robustus adapt physically to climate changes occurring around 2 million years ago at Drimolen Cave?",
+        "choices": [
+          {
+            "text": "It gradually evolved larger teeth and stronger chewing muscles to process tough, fibrous vegetation.",
+            "correct": true,
+            "explanation": "Fossil evidence indicates Paranthropus robustus specialized its dental and cranial morphology over time to consume tough plant foods that became common as the local climate shifted.",
+            "source": {
+              "label": "Scientists found Homo erectus 200,000 years earlier than expected",
+              "url": "https://www.sciencedaily.com/releases/2026/10/261007042113.htm"
+            }
+          },
+          {
+            "text": "It abandoned plant foods entirely in favor of a specialized carnivorous diet.",
+            "correct": false,
+            "explanation": "Paranthropus robustus specialized in eating tough, fibrous plant foods rather than switching entirely to meat."
+          },
+          {
+            "text": "It migrated out of southern Africa to avoid ecological competition with Homo erectus.",
+            "correct": false,
+            "explanation": "Fossils from Drimolen Cave show that Paranthropus robustus lived side-by-side in the same geographic location with Homo erectus rather than migrating away."
+          },
+          {
+            "text": "It developed cranial traits identical to Homo erectus to utilize the same dietary resources.",
+            "correct": false,
+            "explanation": "Homo erectus did not undergo the cranial and dental exaggeration seen in Paranthropus robustus; the two species pursued distinct adaptive paths."
+          }
+        ]
+      },
+      {
+        "question": "What did laboratory testing of recreated ancient birch tar reveal about its biological properties?",
+        "choices": [
+          {
+            "text": "Every tested sample demonstrated the ability to inhibit the growth of bacteria responsible for dangerous wound infections.",
+            "correct": true,
+            "explanation": "Scientists recreated prehistoric birch tar using ancient techniques and found that 100% of the tested samples successfully suppressed bacteria known to cause severe wound infections.",
+            "source": {
+              "label": "Neanderthals may have used prehistoric glue as an ancient antibiotic",
+              "url": "https://www.sciencedaily.com/releases/2026/10/261008005256.htm"
+            }
+          },
+          {
+            "text": "The birch tar exhibited strong adhesive qualities but failed to show any antibacterial effects in laboratory assays.",
+            "correct": false,
+            "explanation": "The study demonstrated that in addition to its known adhesive properties, every tested sample of birch tar inhibited bacterial growth."
+          },
+          {
+            "text": "Antibacterial activity occurred only in samples produced with modern synthetic additives.",
+            "correct": false,
+            "explanation": "The research used authentic, recreated ancient production techniques rather than modern synthetic additives to test the natural tar."
+          },
+          {
+            "text": "Direct fossilized tissue evidence confirmed Neanderthals intentionally applied the tar as prescription medicine.",
+            "correct": false,
+            "explanation": "While laboratory tests proved chemical antibacterial capability, no preserved fossil tissue directly confirms intentional medical application by Neanderthals."
+          }
+        ]
+      }
+    ],
+    "transcriptUrl": "https://jfunk42.com/podcasts/science-brief/transcripts/2026-10-12-01.html"
+  },
+  {
     "title": "Next-Generation Orbital Infrastructure and Spacecraft Re-Entry Technologies",
     "publishedAt": "2026-10-10",
     "description": "This episode examines recent milestones in low Earth orbit infrastructure, including the 237-day Crew-12 splashdown, experimental re-entry heat shield capsule testing, close-proximity satellite inspection technologies, and commercial space station plans.",
