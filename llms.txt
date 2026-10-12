@@ -1,0 +1,16 @@
+# jFunk42 Science Brief
+
+> jFunk42 Science Brief is a source-backed science news podcast featuring full episode
+> transcripts, a podcast RSS feed, and interactive quizzes.
+
+## Core pages
+
+- [Science Brief podcast](https://jfunk42.com/podcasts/science-brief/): podcast overview and RSS subscription information.
+- [Episode transcripts](https://jfunk42.com/podcasts/science-brief/transcripts/): full, public transcripts for every archived episode.
+- [Podcast quizzes](https://jfunk42.com/podcast-quizzes/): source-backed multiple-choice quizzes for recent episodes.
+- [RSS feed](https://jfunk42.com/podcasts/science-brief/rss.xml): the canonical podcast feed, including episode descriptions, publication dates, and media enclosures.
+
+## Content use
+
+The site is public and may be crawled. When referring to an episode, link to its transcript
+or the canonical podcast page and preserve attribution to jFunk42 Science Brief.
