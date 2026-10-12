@@ -101,6 +101,107 @@
     "transcriptUrl": "https://jfunk42.com/podcasts/science-brief/transcripts/2026-10-12-01.html"
   },
   {
+    "title": "Extreme Afterlives: Post-Stellar Planets and the Billion-Year Star Feast",
+    "publishedAt": "2026-10-12",
+    "description": "Astronomers analyzing space telescope data have uncovered evidence of extreme stellar companion dynamics, including a white dwarf potentially giving birth to a gas giant from expelled material and a small star slowly siphoning a brown dwarf over billions of years.",
+    "tags": [
+      "astronomy",
+      "white dwarfs",
+      "exoplanets",
+      "brown dwarfs"
+    ],
+    "questions": [
+      {
+        "question": "What chemical element detected in archival Hubble data surrounding white dwarf HS 0209+0832 led researchers to propose post-mortem material accretion?",
+        "choices": [
+          {
+            "text": "Unusually high concentrations of the refractory heavy metal niobium.",
+            "correct": true,
+            "explanation": "Because white dwarfs have intense gravitational fields that cause heavy elements to sink inward rapidly, detecting high levels of niobium in the stellar atmosphere proves that external material was actively supplied after the star died.",
+            "source": {
+              "label": "Hubble Space Telescope may have found a planet born after its star died",
+              "url": "https://www.sciencedaily.com/releases/2026/10/261007042106.htm"
+            }
+          },
+          {
+            "text": "Elevated concentrations of lithium produced by active nuclear fusion in the white dwarf core.",
+            "correct": false,
+            "explanation": "White dwarfs are dead stellar cores that no longer undergo sustained nuclear fusion, and the specific heavy element detected was niobium."
+          },
+          {
+            "text": "High signatures of methane gas escaping from a disintegrating icy comet belt.",
+            "correct": false,
+            "explanation": "The chemical footprint detected by Hubble was niobium metal gas in the white dwarf's atmosphere, not methane gas from comets."
+          },
+          {
+            "text": "Abundant traces of iron originating from the white dwarf's pristine hydrogen atmosphere.",
+            "correct": false,
+            "explanation": "Heavy elements in white dwarf atmospheres sink inward under gravitational settling, so finding niobium indicates external accretion rather than primordial hydrogen layer iron."
+          }
+        ]
+      },
+      {
+        "question": "Based on TESS light curve data, what candidate object is suspected to orbit the white dwarf HS 0209+0832?",
+        "choices": [
+          {
+            "text": "An Earth-sized rocky planet transiting the star once every 365 days.",
+            "correct": false,
+            "explanation": "The candidate detected by TESS is a Jupiter-sized object orbiting extremely close at 3.7 million miles, not an Earth-sized world on a 365-day orbit."
+          },
+          {
+            "text": "A Jupiter-sized planet candidate orbiting at a tight distance of 3.7 million miles.",
+            "correct": true,
+            "explanation": "TESS detected faint periodic light curve dips consistent with a Jupiter-sized companion orbiting at 3.7 million miles\u2014an orbit where a primordial planet would have been engulfed during the star's red giant phase.",
+            "source": {
+              "label": "Hubble Space Telescope may have found a planet born after its star died",
+              "url": "https://www.sciencedaily.com/releases/2026/10/261007042106.htm"
+            }
+          },
+          {
+            "text": "A brown dwarf binary companion located 300 light-years away from the star.",
+            "correct": false,
+            "explanation": "The star system located 300 light-years away involves a small star siphoning a brown dwarf, which is a separate discovery from HS 0209+0832."
+          },
+          {
+            "text": "A ring of primordial gas expanding outward at 1 astronomical unit (AU).",
+            "correct": false,
+            "explanation": "The TESS signal indicates a Jupiter-sized planet candidate in a close 3.7 million mile orbit, not an expanding gas ring at 1 AU."
+          }
+        ]
+      },
+      {
+        "question": "What structural property of brown dwarfs allows the small star observed by MIT astronomers to siphon material in a steady stream over billions of years?",
+        "choices": [
+          {
+            "text": "Brown dwarfs undergo core hydrogen fusion that rapidly generates new mass to replace stolen gas.",
+            "correct": false,
+            "explanation": "Brown dwarfs lack sufficient mass to trigger and sustain nuclear hydrogen fusion in their cores."
+          },
+          {
+            "text": "The brown dwarf's magnetic fields automatically lock the binary orbit in place, preventing angular momentum loss.",
+            "correct": false,
+            "explanation": "Magnetic fields and stellar winds actually drive angular momentum loss, which can dynamically shift the binary orbit rather than locking it fixed."
+          },
+          {
+            "text": "Brown dwarfs are supported by electron degeneracy pressure, keeping their radius steady as they lose mass.",
+            "correct": true,
+            "explanation": "Because brown dwarfs are degenerate substellar objects rather than fusion-powered main-sequence stars, losing mass causes their radius to stay roughly constant or expand slightly relative to mass, maintaining a steady mass transfer stream.",
+            "source": {
+              "label": "MIT astronomers catch a star in a feast that could last billions of years",
+              "url": "https://www.sciencedaily.com/releases/2026/10/261008005240.htm"
+            }
+          },
+          {
+            "text": "The brown dwarf is engulfed inside a white dwarf's Roche limit, holding the material in equilibrium.",
+            "correct": false,
+            "explanation": "The MIT system consists of a small, low-mass living star accreting mass from a brown dwarf companion, not a white dwarf engulfment."
+          }
+        ]
+      }
+    ],
+    "transcriptUrl": "https://jfunk42.com/podcasts/science-brief/transcripts/2026-10-12-09.html"
+  },
+  {
     "title": "Next-Generation Orbital Infrastructure and Spacecraft Re-Entry Technologies",
     "publishedAt": "2026-10-10",
     "description": "This episode examines recent milestones in low Earth orbit infrastructure, including the 237-day Crew-12 splashdown, experimental re-entry heat shield capsule testing, close-proximity satellite inspection technologies, and commercial space station plans.",
