@@ -18,6 +18,25 @@ const elements = {
   recentQuizzes: document.querySelector("#recent-quizzes"),
 };
 
+function trackQuizAnswer(quiz, questionIndex, choiceIndex, isCorrect) {
+  if (typeof window.gtag !== "function") {
+    return;
+  }
+
+  const answerDetails = {
+    quiz_date: quiz.publishedAt,
+    question_number: questionIndex + 1,
+    answer_number: choiceIndex + 1,
+    answer_result: isCorrect ? "correct" : "incorrect",
+  };
+
+  window.gtag("event", "quiz_answer_selected", answerDetails);
+
+  if (isCorrect) {
+    window.gtag("event", "quiz_correct_answer_selected", answerDetails);
+  }
+}
+
 function formatPublishedDate(value) {
   return new Intl.DateTimeFormat(undefined, {
     year: "numeric",
@@ -112,6 +131,8 @@ function renderQuestions(quiz) {
       button.textContent = choice.text;
       button.setAttribute("aria-label", `Answer ${choiceIndex + 1}: ${choice.text}`);
       button.addEventListener("click", () => {
+        trackQuizAnswer(quiz, questionIndex, choiceIndex, choice.correct);
+
         choices.querySelectorAll("button").forEach((item) => {
           item.disabled = true;
           item.classList.toggle("is-correct", item === button && choice.correct);
