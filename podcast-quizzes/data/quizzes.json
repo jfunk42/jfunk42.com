@@ -1,5 +1,106 @@
 [
   {
+    "title": "Red Planet Odometer: Evaluating Perseverance's Record Martian Drive",
+    "publishedAt": "2026-10-14",
+    "description": "On Sol 2,006, NASA's Perseverance Mars rover completed a 91.31-meter drive through rocky terrain, setting a historic distance record on the Red Planet and highlighting off-world surface mobility.",
+    "tags": [
+      "Mars Rover",
+      "Perseverance",
+      "Space Exploration",
+      "Robotics"
+    ],
+    "questions": [
+      {
+        "question": "What distance did NASA's Perseverance rover complete on Sol 2,006 to help establish its Red Planet distance record?",
+        "choices": [
+          {
+            "text": "299.6 feet (91.31 meters)",
+            "correct": true,
+            "explanation": "On Sol 2,006, Perseverance logged a single sol drive spanning 299.6 feet (91.31 meters) across rugged Martian terrain, officially setting an all-time rover distance record on Mars.",
+            "source": {
+              "label": "Perseverance Navcam Image Marks Record Drive",
+              "url": "https://science.nasa.gov/photojournal/perseverance-navcam-image-marks-record-drive/"
+            }
+          },
+          {
+            "text": "150.0 feet (45.72 meters)",
+            "correct": false,
+            "explanation": "This is incorrect because Perseverance drove 299.6 feet (91.31 meters) on Sol 2,006, not 150.0 feet."
+          },
+          {
+            "text": "500.0 feet (152.40 meters)",
+            "correct": false,
+            "explanation": "This is incorrect because the single sol drive logged by Perseverance was 299.6 feet (91.31 meters), rather than 500.0 feet."
+          },
+          {
+            "text": "1,200.0 feet (365.76 meters)",
+            "correct": false,
+            "explanation": "This is incorrect because the logged distance on Sol 2,006 was 299.6 feet (91.31 meters), not 1,200.0 feet."
+          }
+        ]
+      },
+      {
+        "question": "What is the primary role of OPTIMISM in the operations of the Perseverance Mars mission?",
+        "choices": [
+          {
+            "text": "It is an orbital satellite in Mars orbit that routes navcam data and autonomously calculates rover pathing.",
+            "correct": false,
+            "explanation": "This is incorrect because OPTIMISM is a ground-based rover twin located in JPL's Mars Yard on Earth, not an orbital satellite."
+          },
+          {
+            "text": "It is a full-scale Earth-based twin used in JPL's Mars Yard to test software commands and mechanism behavior before driving on Mars.",
+            "correct": true,
+            "explanation": "OPTIMISM (Operational Perseverance Twin for Integration of Mechanisms and Instruments) is a full-scale physical engineering model at JPL on Earth that allows engineers to dry-run maneuvers and software commands before executing them on Mars.",
+            "source": {
+              "label": "NASA\u2019s Record-Setting Perseverance Rover Team",
+              "url": "https://science.nasa.gov/photojournal/nasas-record-setting-perseverance-rover-team/"
+            }
+          },
+          {
+            "text": "It is an onboard instrument on Perseverance that measures mechanical wheel wear and dust accumulation in real time.",
+            "correct": false,
+            "explanation": "This is incorrect because OPTIMISM is an Earth-side engineering vehicle twin, not an instrument installed on the rover on Mars."
+          },
+          {
+            "text": "It is a specialized drilling mechanism designed to test core sample extraction on high-priority rocks.",
+            "correct": false,
+            "explanation": "This is incorrect because OPTIMISM refers to the complete full-scale ground model rover used at JPL, not just a drilling mechanism."
+          }
+        ]
+      },
+      {
+        "question": "As highlighted in the comparative drive-distance analysis, which two NASA rovers were concurrently active and logging surface distance on Mars as of October 11, 2026?",
+        "choices": [
+          {
+            "text": "Perseverance and Opportunity",
+            "correct": false,
+            "explanation": "This is incorrect because Opportunity ceased operations prior to October 2026; the active pair mentioned in the episode is Perseverance and Curiosity."
+          },
+          {
+            "text": "Spirit and Curiosity",
+            "correct": false,
+            "explanation": "This is incorrect because Spirit is no longer active on Mars; Curiosity and Perseverance are the two rovers concurrently operating."
+          },
+          {
+            "text": "Perseverance and Curiosity",
+            "correct": true,
+            "explanation": "As of October 11, 2026, both Perseverance and Curiosity were actively moving across the Martian surface and adding to their odometers concurrently.",
+            "source": {
+              "label": "Comparing Off-World Rover Driving Distances",
+              "url": "https://science.nasa.gov/photojournal/comparing-off-world-rover-driving-distances/"
+            }
+          },
+          {
+            "text": "Sojourner and Perseverance",
+            "correct": false,
+            "explanation": "This is incorrect because Sojourner was NASA's first small Mars rover from 1997 and is no longer operational."
+          }
+        ]
+      }
+    ],
+    "transcriptUrl": "https://jfunk42.com/podcasts/science-brief/transcripts/2026-10-14-09.html"
+  },
+  {
     "title": "Deep Time Survival: New Fossil and Chemical Clues to Early Hominin Adaptations",
     "publishedAt": "2026-10-12",
     "description": "Recent scientific discoveries reveal that Homo erectus appeared in southern Africa 200,000 years earlier than previously thought while Neanderthals produced birch tar capable of inhibiting dangerous wound infections.",
