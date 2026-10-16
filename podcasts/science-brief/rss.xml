@@ -10,7 +10,7 @@
     <description>Short, source-backed briefings on new discoveries in science, space, health, and technology.</description>
     <language>en-us</language>
     <copyright>Copyright 2026 James Funk</copyright>
-    <lastBuildDate>Wed, 14 Oct 2026 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 09:00:00 +0000</lastBuildDate>
     <managingEditor>james.c.funk@gmail.com (James Funk)</managingEditor>
     <webMaster>james.c.funk@gmail.com (James Funk)</webMaster>
     <itunes:title>jFunk42 Science Brief</itunes:title>
@@ -31,6 +31,21 @@
       <title>jFunk42 Science Brief</title>
       <link>https://jfunk42.com/podcasts/science-brief/</link>
     </image>
+
+    <item>
+      <title>Rethinking Alzheimer&#x27;s Disease: Amyloid Clearance, Tau Spreading, and the Overlooked P3 Peptide</title>
+      <description><![CDATA[Recent findings in Alzheimer's research demonstrate that clearing amyloid plaques reduces local tau damage while revealing that the overlooked P3 peptide rapidly forms harmful aggregations.]]></description>
+      <content:encoded><![CDATA[<p>Recent findings in Alzheimer&#x27;s research demonstrate that clearing amyloid plaques reduces local tau damage while revealing that the overlooked P3 peptide rapidly forms harmful aggregations.</p><p><a href="https://jfunk42.com/podcast-quizzes/#Rethinking%20Alzheimer%27s%20Disease%3A%20Amyloid%20Clearance%2C%20Tau%20Spreading%2C%20and%20the%20Overlooked%20P3%20Peptide">Read the sources and take the episode quiz.</a></p><p><a href="https://jfunk42.com/podcasts/science-brief/transcripts/2026-10-16-09.html">Read the full transcript.</a></p>]]></content:encoded>
+      <link>https://jfunk42.com/podcast-quizzes/#Rethinking%20Alzheimer%27s%20Disease%3A%20Amyloid%20Clearance%2C%20Tau%20Spreading%2C%20and%20the%20Overlooked%20P3%20Peptide</link>
+      <guid isPermaLink="false">jfunk42-science-brief-2026-10-16-09</guid>
+      <pubDate>Fri, 16 Oct 2026 09:00:00 +0000</pubDate>
+      <enclosure url="https://podcast.jfunk42.com/jfunk42-science-brief/episodes/2026-10-16-09.mp3" length="13972677" type="audio/mpeg"/>
+      <itunes:title>Rethinking Alzheimer&#x27;s Disease: Amyloid Clearance, Tau Spreading, and the Overlooked P3 Peptide</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:duration>23:38</itunes:duration>
+      <itunes:image href="https://podcast.jfunk42.com/jfunk42-science-brief/artwork/2026-10-16-09-cover.png"/>
+    </item>
 
     <item>
       <title>Red Planet Odometer: Evaluating Perseverance&#x27;s Record Martian Drive</title>

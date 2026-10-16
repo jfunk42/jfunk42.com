@@ -1,5 +1,106 @@
 [
   {
+    "title": "Rethinking Alzheimer's Disease: Amyloid Clearance, Tau Spreading, and the Overlooked P3 Peptide",
+    "publishedAt": "2026-10-16",
+    "description": "Recent findings in Alzheimer's research demonstrate that clearing amyloid plaques reduces local tau damage while revealing that the overlooked P3 peptide rapidly forms harmful aggregations.",
+    "tags": [
+      "Alzheimer's Disease",
+      "Amyloid Beta",
+      "P3 Peptide",
+      "Neurodegeneration"
+    ],
+    "questions": [
+      {
+        "question": "What did the detailed post-mortem examination of an Alzheimer's patient's brain reveal about regions where amyloid plaques had been cleared?",
+        "choices": [
+          {
+            "text": "Brain regions cleared of amyloid plaques retained remarkably low levels of harmful tau buildup compared to neighboring uncleared areas.",
+            "correct": true,
+            "explanation": "The post-mortem examination showed a stark contrast: areas cleared of amyloid plaques retained remarkably low levels of harmful tau, whereas neighboring uncleared regions exhibited extensive cellular damage.",
+            "source": {
+              "label": "Rare study reveals a striking divide inside an Alzheimer\u2019s patient\u2019s brain",
+              "url": "https://www.sciencedaily.com/releases/2026/10/261013015814.htm"
+            }
+          },
+          {
+            "text": "Cleared brain regions showed accelerated tau tangle accumulation and higher overall cellular toxicity than uncleared regions.",
+            "correct": false,
+            "explanation": "This choice is incorrect because the examination revealed remarkably low levels of tau buildup in cleared regions, not accelerated tau accumulation."
+          },
+          {
+            "text": "Plaque clearance was uniform across all brain regions, completely eliminating neurodegeneration throughout the entire central nervous system.",
+            "correct": false,
+            "explanation": "This choice is incorrect because the examination revealed a regional divide where neighboring uncleared areas inside the same brain still suffered from extensive damage."
+          },
+          {
+            "text": "Clearing amyloid plaques directly restored cognitive function and reversed memory loss shortly before the patient passed away.",
+            "correct": false,
+            "explanation": "This choice is incorrect because a post-mortem tissue examination provides a single snapshot after death and cannot demonstrate active cognitive restoration during life."
+          }
+        ]
+      },
+      {
+        "question": "What key discovery did researchers at UC Santa Cruz make regarding the long-ignored P3 peptide?",
+        "choices": [
+          {
+            "text": "The P3 peptide forms harmful protein clumps even faster than amyloid beta and can directly damage brain cells.",
+            "correct": true,
+            "explanation": "Contrary to the long-held assumption that P3 was harmless metabolic garbage, UC Santa Cruz researchers found that P3 aggregates rapidly and can directly damage brain cells.",
+            "source": {
+              "label": "Scientists may have overlooked a hidden Alzheimer's culprit for decades",
+              "url": "https://www.sciencedaily.com/releases/2026/10/261013015838.htm"
+            }
+          },
+          {
+            "text": "The P3 peptide acts as an antioxidant that protects neural tissue from secondary tau tangle formation.",
+            "correct": false,
+            "explanation": "This choice is incorrect because P3 was shown to form harmful protein clumps and damage brain cells, rather than acting as a protective antioxidant."
+          },
+          {
+            "text": "The P3 peptide degrades instantly upon creation, preventing it from interacting with surrounding brain tissue.",
+            "correct": false,
+            "explanation": "This choice is incorrect because the study demonstrated that P3 forms rapid aggregations that persist and inflict direct cellular damage."
+          },
+          {
+            "text": "The P3 peptide is only generated when patients are treated with multi-target combination gene therapies.",
+            "correct": false,
+            "explanation": "This choice is incorrect because P3 is a naturally occurring peptide fragment derived from alternative cleavage of the precursor protein."
+          }
+        ]
+      },
+      {
+        "question": "Why was the P3 peptide largely overlooked by Alzheimer's researchers for decades?",
+        "choices": [
+          {
+            "text": "Scientific confirmation bias and the dominance of the amyloid hypothesis led researchers to assume P3 was a benign byproduct.",
+            "correct": true,
+            "explanation": "Research funding and diagnostic tools were overwhelmingly focused on amyloid beta, leading scientists to assume shorter cleavage fragments like P3 were biologically inert.",
+            "source": {
+              "label": "Scientists may have overlooked a hidden Alzheimer's culprit for decades",
+              "url": "https://www.sciencedaily.com/releases/2026/10/261013015838.htm"
+            }
+          },
+          {
+            "text": "P3 is invisible under electron microscopes and cannot be detected in biological samples.",
+            "correct": false,
+            "explanation": "This choice is incorrect because P3's physical properties and toxicity were systematically evaluated by researchers once they challenged the dogma."
+          },
+          {
+            "text": "Federal regulations explicitly banned scientists from measuring non-amyloidogenic processing pathways.",
+            "correct": false,
+            "explanation": "This choice is incorrect because the oversight was caused by scientific assumption and target bias, not regulatory prohibitions."
+          },
+          {
+            "text": "P3 was only synthesized for the first time in 2026 and did not exist in human brains prior to recent mutations.",
+            "correct": false,
+            "explanation": "This choice is incorrect because P3 is a standard byproduct of precursor protein processing that has always been present but was historically assumed to be harmless."
+          }
+        ]
+      }
+    ],
+    "transcriptUrl": "https://jfunk42.com/podcasts/science-brief/transcripts/2026-10-16-09.html"
+  },
+  {
     "title": "Red Planet Odometer: Evaluating Perseverance's Record Martian Drive",
     "publishedAt": "2026-10-14",
     "description": "On Sol 2,006, NASA's Perseverance Mars rover completed a 91.31-meter drive through rocky terrain, setting a historic distance record on the Red Planet and highlighting off-world surface mobility.",
