@@ -1,0 +1,22 @@
+{
+  "features": [
+    {
+      "id": "math-performance-tracking",
+      "area": "Math Quiz",
+      "title": "Performance tracking",
+      "description": "See accuracy, streaks, pace, and the topics that deserve another pass after each Math Quiz session."
+    },
+    {
+      "id": "math-master-path",
+      "area": "Math Quiz",
+      "title": "Math Master path",
+      "description": "Follow a guided lesson path that builds fluency step by step, from practice sets to progressively harder challenges."
+    },
+    {
+      "id": "podcast-member-alpha",
+      "area": "Science Brief",
+      "title": "Member alpha episode review",
+      "description": "Give members an early audio draft and a focused window to suggest edits before a Science Brief episode is released to everyone."
+    }
+  ]
+}

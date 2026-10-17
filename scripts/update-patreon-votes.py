@@ -10,11 +10,6 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 
-FEATURE_IDS = (
-    "math-performance-tracking",
-    "math-master-path",
-    "podcast-member-alpha",
-)
 API_URL_TEMPLATE = "https://analyticsdata.googleapis.com/v1beta/properties/{property_id}:runReport"
 
 
@@ -40,8 +35,14 @@ def parse_arguments():
     parser.add_argument(
         "--output",
         type=Path,
-        default=Path("patreon/votes.json"),
+        default=Path("new-feature-request/votes.json"),
         help="Public totals JSON file to update.",
+    )
+    parser.add_argument(
+        "--features",
+        type=Path,
+        default=Path("new-feature-request/features.json"),
+        help="Feature catalog JSON file to use.",
     )
     return parser.parse_args()
 
@@ -86,8 +87,27 @@ def fetch_rows(property_id, access_token, start_date):
         raise RuntimeError(f"GA4 Data API request failed: {error.reason}") from error
 
 
-def create_totals(rows):
-    totals = {feature_id: {"up": 0, "down": 0} for feature_id in FEATURE_IDS}
+def load_feature_ids(feature_catalog):
+    try:
+        features = json.loads(feature_catalog.read_text()).get("features", [])
+    except OSError as error:
+        raise RuntimeError(f"Unable to read feature catalog: {feature_catalog}") from error
+    except json.JSONDecodeError as error:
+        raise RuntimeError(f"Feature catalog is not valid JSON: {feature_catalog}") from error
+
+    feature_ids = tuple(feature.get("id") for feature in features if isinstance(feature, dict))
+    if not feature_ids or len(feature_ids) != len(features):
+        raise RuntimeError("Feature catalog must contain one non-empty id for every feature.")
+    if any(not isinstance(feature_id, str) or not feature_id for feature_id in feature_ids):
+        raise RuntimeError("Feature catalog IDs must be non-empty strings.")
+    if len(set(feature_ids)) != len(feature_ids):
+        raise RuntimeError("Feature catalog IDs must be unique.")
+
+    return feature_ids
+
+
+def create_totals(rows, feature_ids):
+    totals = {feature_id: {"up": 0, "down": 0} for feature_id in feature_ids}
 
     for row in rows:
         dimensions = row.get("dimensionValues", [])
@@ -125,8 +145,9 @@ def main():
             "Use a short-lived OAuth token with GA4 Data API read access.",
         )
 
+    feature_ids = load_feature_ids(arguments.features)
     rows = fetch_rows(arguments.property_id, arguments.access_token, arguments.start_date)
-    write_totals(arguments.output, create_totals(rows))
+    write_totals(arguments.output, create_totals(rows, feature_ids))
     print(f"Updated {arguments.output} from {len(rows)} GA4 report rows.")
 
 
