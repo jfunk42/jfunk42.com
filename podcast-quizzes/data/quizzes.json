@@ -1,5 +1,106 @@
 [
   {
+    "title": "Changing Poles: Unpacking 2026's Polar Sea Ice Declines and Ocean Signals",
+    "publishedAt": "2026-10-17",
+    "description": "Satellite observations in 2026 reveal persistent Arctic sea ice thinning and a third-lowest winter maximum in Antarctica, raising questions about whether both poles are entering new climate regimes.",
+    "tags": [
+      "climate science",
+      "sea ice",
+      "satellites",
+      "El Ni\u00f1o"
+    ],
+    "questions": [
+      {
+        "question": "According to 2026 satellite observations, what structural composition shift has made Arctic sea ice increasingly vulnerable to rapid summer melting?",
+        "choices": [
+          {
+            "text": "Thick multi-year ice has largely been replaced by thin, seasonal first-year ice that lacks thermal mass.",
+            "correct": true,
+            "explanation": "Satellite telemetry reveals that resilient multi-year ice has been replaced by thin first-year ice, which lacks the structural thermal mass to withstand summer warming.",
+            "source": {
+              "label": "Arctic sea ice hits another troubling low in 2026",
+              "url": "https://www.sciencedaily.com/releases/2026/10/261015073212.htm"
+            }
+          },
+          {
+            "text": "Multi-year ice has expanded rapidly, trapping excess heat beneath the ice pack.",
+            "correct": false,
+            "explanation": "The podcast states that thick multi-year ice has largely disappeared and been replaced by thin seasonal ice, rather than expanding."
+          },
+          {
+            "text": "Winter ice formation has completely ceased, leaving the Arctic Ocean ice-free year-round.",
+            "correct": false,
+            "explanation": "Thin first-year ice still forms during the Arctic winter; winter freezing has not completely ceased."
+          },
+          {
+            "text": "Increased atmospheric salinity has directly dissolved the structural core of multi-year ice.",
+            "correct": false,
+            "explanation": "The loss of multi-year ice is driven by summer melt cycles and thermodynamic warming, not atmospheric salinity dissolving the ice."
+          }
+        ]
+      },
+      {
+        "question": "What key milestone did Antarctic sea ice record in 2026 following decades of historical ice expansion?",
+        "choices": [
+          {
+            "text": "It recorded an all-time high winter maximum, continuing its long-term expansion trend.",
+            "correct": false,
+            "explanation": "In 2026, Antarctic sea ice reached its third-lowest winter maximum, reversing its historical growth trend."
+          },
+          {
+            "text": "It recorded its third-lowest winter maximum on record, extending a recent sharp downturn.",
+            "correct": true,
+            "explanation": "2026 satellite data showed Antarctic sea ice reaching its third-lowest winter maximum on record, continuing a dramatic multi-year decline that overturned decades of prior ice growth.",
+            "source": {
+              "label": "Antarctica\u2019s sea ice has undergone a stunning reversal",
+              "url": "https://www.sciencedaily.com/releases/2026/10/261015073210.htm"
+            }
+          },
+          {
+            "text": "It completely melted away during the winter dark period for the first time in satellite history.",
+            "correct": false,
+            "explanation": "Antarctic sea ice did not completely disappear during winter; it reached its third-lowest winter maximum."
+          },
+          {
+            "text": "It remained completely unchanged compared to the 1970s baseline measurements.",
+            "correct": false,
+            "explanation": "The satellite data highlighted a dramatic shift and multi-year downturn rather than an unchanged baseline."
+          }
+        ]
+      },
+      {
+        "question": "What major global climate driver unfolding in late 2026 is releasing thermal energy that influences polar ice dynamics?",
+        "choices": [
+          {
+            "text": "A historic El Ni\u00f1o event in the equatorial Pacific tracked by NASA satellites.",
+            "correct": true,
+            "explanation": "NASA satellites in late 2026 tracked a historic El Ni\u00f1o in the equatorial Pacific, which released vast amounts of ocean heat into the atmosphere and altered global weather patterns.",
+            "source": {
+              "label": "NASA Satellites Observe Historic 2026 El Ni\u00f1o",
+              "url": "https://science.nasa.gov/earth/nasa-satellites-observe-historic-2026-el-nino/"
+            }
+          },
+          {
+            "text": "A prolonged La Ni\u00f1a event cooling surface waters across the Indian Ocean.",
+            "correct": false,
+            "explanation": "The episode explicitly highlights a historic El Ni\u00f1o event unfolding in the equatorial Pacific, not a La Ni\u00f1a in the Indian Ocean."
+          },
+          {
+            "text": "A persistent solar flare surge that directly melted ice caps at both poles.",
+            "correct": false,
+            "explanation": "The global driver discussed is an oceanic warming pattern (El Ni\u00f1o) in the equatorial Pacific, not solar flare activity."
+          },
+          {
+            "text": "A sudden shutoff of the Antarctic Circumpolar Current across high southern latitudes.",
+            "correct": false,
+            "explanation": "The ocean current shutoff is not cited; the major global driver identified in 2026 is the equatorial Pacific El Ni\u00f1o event."
+          }
+        ]
+      }
+    ],
+    "transcriptUrl": "https://jfunk42.com/podcasts/science-brief/transcripts/2026-10-17-09.html"
+  },
+  {
     "title": "Rethinking Alzheimer's Disease: Amyloid Clearance, Tau Spreading, and the Overlooked P3 Peptide",
     "publishedAt": "2026-10-16",
     "description": "Recent findings in Alzheimer's research demonstrate that clearing amyloid plaques reduces local tau damage while revealing that the overlooked P3 peptide rapidly forms harmful aggregations.",

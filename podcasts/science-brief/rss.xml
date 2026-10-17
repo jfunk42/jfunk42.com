@@ -10,7 +10,7 @@
     <description>Short, source-backed briefings on new discoveries in science, space, health, and technology.</description>
     <language>en-us</language>
     <copyright>Copyright 2026 James Funk</copyright>
-    <lastBuildDate>Fri, 16 Oct 2026 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 09:00:00 +0000</lastBuildDate>
     <managingEditor>james.c.funk@gmail.com (James Funk)</managingEditor>
     <webMaster>james.c.funk@gmail.com (James Funk)</webMaster>
     <itunes:title>jFunk42 Science Brief</itunes:title>
@@ -31,6 +31,21 @@
       <title>jFunk42 Science Brief</title>
       <link>https://jfunk42.com/podcasts/science-brief/</link>
     </image>
+
+    <item>
+      <title>Changing Poles: Unpacking 2026&#x27;s Polar Sea Ice Declines and Ocean Signals</title>
+      <description><![CDATA[Satellite observations in 2026 reveal persistent Arctic sea ice thinning and a third-lowest winter maximum in Antarctica, raising questions about whether both poles are entering new climate regimes.]]></description>
+      <content:encoded><![CDATA[<p>Satellite observations in 2026 reveal persistent Arctic sea ice thinning and a third-lowest winter maximum in Antarctica, raising questions about whether both poles are entering new climate regimes.</p><p><a href="https://jfunk42.com/podcast-quizzes/#Changing%20Poles%3A%20Unpacking%202026%27s%20Polar%20Sea%20Ice%20Declines%20and%20Ocean%20Signals">Read the sources and take the episode quiz.</a></p><p><a href="https://jfunk42.com/podcasts/science-brief/transcripts/2026-10-17-09.html">Read the full transcript.</a></p>]]></content:encoded>
+      <link>https://jfunk42.com/podcast-quizzes/#Changing%20Poles%3A%20Unpacking%202026%27s%20Polar%20Sea%20Ice%20Declines%20and%20Ocean%20Signals</link>
+      <guid isPermaLink="false">jfunk42-science-brief-2026-10-17-09</guid>
+      <pubDate>Sat, 17 Oct 2026 09:00:00 +0000</pubDate>
+      <enclosure url="https://podcast.jfunk42.com/jfunk42-science-brief/episodes/2026-10-17-09.mp3" length="14826933" type="audio/mpeg"/>
+      <itunes:title>Changing Poles: Unpacking 2026&#x27;s Polar Sea Ice Declines and Ocean Signals</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:duration>25:04</itunes:duration>
+      <itunes:image href="https://podcast.jfunk42.com/jfunk42-science-brief/artwork/2026-10-17-09-cover.png"/>
+    </item>
 
     <item>
       <title>Rethinking Alzheimer&#x27;s Disease: Amyloid Clearance, Tau Spreading, and the Overlooked P3 Peptide</title>
