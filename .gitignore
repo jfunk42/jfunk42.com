@@ -1,2 +1,3 @@
 # Private Patreon integration state. Never commit patron data or API credentials.
 .patreon/
+__pycache__/

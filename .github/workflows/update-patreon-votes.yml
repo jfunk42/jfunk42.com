@@ -1,0 +1,55 @@
+name: Update Patreon feature votes
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-totals:
+    runs-on: ubuntu-latest
+    steps:
+      - id: configuration
+        env:
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
+          GA4_SERVICE_ACCOUNT_KEY: ${{ secrets.GA4_SERVICE_ACCOUNT_KEY }}
+        run: |
+          if [ -n "$GA4_PROPERTY_ID" ] && [ -n "$GA4_SERVICE_ACCOUNT_KEY" ]; then
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "Skipping vote sync: configure GA4_PROPERTY_ID and GA4_SERVICE_ACCOUNT_KEY secrets."
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.configuration.outputs.configured == 'true'
+
+      - id: auth
+        uses: google-github-actions/auth@v2
+        if: steps.configuration.outputs.configured == 'true'
+        with:
+          credentials_json: ${{ secrets.GA4_SERVICE_ACCOUNT_KEY }}
+          token_format: access_token
+          access_token_scopes: https://www.googleapis.com/auth/analytics.readonly
+
+      - name: Update public totals
+        if: steps.configuration.outputs.configured == 'true'
+        env:
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
+          GA4_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
+        run: python3 scripts/update-patreon-votes.py
+
+      - name: Commit changed totals
+        if: steps.configuration.outputs.configured == 'true'
+        run: |
+          if git diff --quiet -- patreon/votes.json; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add patreon/votes.json
+          git commit -m "Update Patreon feature vote totals"
+          git push
