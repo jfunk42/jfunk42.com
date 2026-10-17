@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1400" role="img" aria-labelledby="title description">
+  <title id="title">jFunk42 Science Brief Time Vortex cover</title>
+  <desc id="description">An original indigo, violet, and cyan science podcast cover with a swirling orbital vortex.</desc>
+  <defs>
+    <radialGradient id="space" cx="48%" cy="43%" r="78%">
+      <stop offset="0" stop-color="#5144b5"/>
+      <stop offset=".38" stop-color="#27245a"/>
+      <stop offset="1" stop-color="#100d2c"/>
+    </radialGradient>
+    <linearGradient id="arc" x1="120" y1="190" x2="1220" y2="1180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a4fff1"/>
+      <stop offset=".38" stop-color="#64e7d0"/>
+      <stop offset=".7" stop-color="#9c82ff"/>
+      <stop offset="1" stop-color="#ff9dd9"/>
+    </linearGradient>
+    <linearGradient id="core" x1="570" y1="530" x2="830" y2="840" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#eff2ff"/>
+      <stop offset=".45" stop-color="#9bf9e9"/>
+      <stop offset="1" stop-color="#4e42a5"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="stars" width="140" height="140" patternUnits="userSpaceOnUse">
+      <circle cx="18" cy="22" r="2" fill="#d6d6ff" opacity=".68"/>
+      <circle cx="98" cy="42" r="1.5" fill="#fff" opacity=".52"/>
+      <circle cx="56" cy="105" r="2.5" fill="#9bf9e9" opacity=".56"/>
+      <circle cx="126" cy="121" r="1" fill="#fff" opacity=".42"/>
+    </pattern>
+  </defs>
+  <rect width="1400" height="1400" fill="url(#space)"/>
+  <rect width="1400" height="1400" fill="url(#stars)" opacity=".72"/>
+  <g fill="none" stroke="url(#arc)" stroke-linecap="round" filter="url(#glow)">
+    <path d="M189 796c-84-348 210-664 562-602 333 58 504 400 335 681-151 250-534 335-754 142-173-151-162-445 31-581 174-123 429-62 514 109 77 153-5 347-168 405-141 50-298-31-329-163-29-119 58-239 178-249" stroke-width="36" opacity=".92"/>
+    <path d="M102 838c-116-419 215-805 654-758 407 44 638 449 457 824-164 341-620 455-926 218" stroke-width="13" opacity=".7"/>
+    <path d="M311 339c191-184 515-182 703 4 201 199 181 522-35 690" stroke-width="8" opacity=".7"/>
+    <path d="M427 1048c-252-125-339-446-190-696" stroke-width="20" opacity=".8"/>
+  </g>
+  <circle cx="692" cy="693" r="147" fill="#252157" opacity=".8"/>
+  <circle cx="692" cy="693" r="99" fill="url(#core)" filter="url(#glow)"/>
+  <circle cx="692" cy="693" r="43" fill="#f6ffff"/>
+  <g fill="#a4fff1" filter="url(#glow)">
+    <circle cx="234" cy="518" r="10"/>
+    <circle cx="1120" cy="427" r="13"/>
+    <circle cx="1025" cy="1071" r="9"/>
+    <circle cx="375" cy="1018" r="7"/>
+  </g>
+  <rect x="108" y="1018" width="1184" height="260" rx="36" fill="#111033" opacity=".86"/>
+  <text x="700" y="1117" fill="#a4fff1" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="700" letter-spacing="14" text-anchor="middle">JFUNK42</text>
+  <text x="700" y="1210" fill="#eff2ff" font-family="Arial, Helvetica, sans-serif" font-size="98" font-weight="800" letter-spacing="3" text-anchor="middle">SCIENCE BRIEF</text>
+</svg>
