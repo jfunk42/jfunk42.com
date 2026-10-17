@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-style="ocean-sunset">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,6 +50,13 @@
   <main class="page">
     <section class="hero">
       <p class="eyebrow">jFunk42.com</p>
+      <div class="style-selector">
+        <label for="style-select">Site style</label>
+        <select id="style-select" name="style">
+          <option value="ocean-sunset">Ocean Sunset</option>
+          <option value="classic-blue">Classic Blue</option>
+        </select>
+      </div>
       <h1>jFunk42 Science Brief</h1>
       <p class="lead">
         Short, source-backed briefings on new discoveries in science, space, health, and technology.
@@ -68,5 +75,6 @@
       </p>
     </section>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>

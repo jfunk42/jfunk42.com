@@ -1,5 +1,18 @@
 :root {
   color-scheme: light;
+  --bg: #dcebf0;
+  --surface: #fff9f5;
+  --text: #18364f;
+  --muted: #506a7d;
+  --accent: #d95f77;
+  --border: #f1bfaf;
+  --shadow: 0 18px 40px rgba(32, 93, 121, 0.16);
+  --button-shadow: 0 10px 24px rgba(217, 95, 119, 0.3);
+  --button-hover-shadow: 0 14px 28px rgba(217, 95, 119, 0.38);
+  --secondary-hover-shadow: 0 8px 18px rgba(32, 93, 121, 0.16);
+}
+
+:root[data-style="classic-blue"] {
   --bg: #f4f7fb;
   --surface: #ffffff;
   --text: #132033;
@@ -7,6 +20,9 @@
   --accent: #2f6df6;
   --border: #d8e2f2;
   --shadow: 0 18px 40px rgba(27, 52, 97, 0.08);
+  --button-shadow: 0 10px 24px rgba(47, 109, 246, 0.25);
+  --button-hover-shadow: 0 14px 28px rgba(47, 109, 246, 0.32);
+  --secondary-hover-shadow: 0 8px 18px rgba(27, 52, 97, 0.12);
 }
 
 * {
@@ -17,6 +33,12 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--text);
+  background:
+    radial-gradient(circle at 12% 5%, rgba(255, 183, 145, 0.78), transparent 32rem),
+    linear-gradient(165deg, #f8b59f 0%, #f7c5bc 22%, #f6d7c7 39%, var(--bg) 65%, #b9dfe5 100%);
+}
+
+:root[data-style="classic-blue"] body {
   background: linear-gradient(180deg, #f8fbff 0%, var(--bg) 100%);
 }
 
@@ -37,6 +59,30 @@ body {
 
 .hero {
   padding: 48px;
+}
+
+.style-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 28px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.style-selector select {
+  padding: 7px 30px 7px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text);
+  background: var(--surface);
+  font: inherit;
+}
+
+.style-selector select:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
 }
 
 .eyebrow {
@@ -80,13 +126,13 @@ h1 {
   font-weight: 700;
   text-decoration: none;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
-  box-shadow: 0 10px 24px rgba(47, 109, 246, 0.25);
+  box-shadow: var(--button-shadow);
 }
 
 .button-link:hover,
 .button-link:focus-visible {
   transform: translateY(-1px);
-  box-shadow: 0 14px 28px rgba(47, 109, 246, 0.32);
+  box-shadow: var(--button-hover-shadow);
 }
 
 .secondary-button {
@@ -99,7 +145,7 @@ h1 {
 
 .secondary-button:hover,
 .secondary-button:focus-visible {
-  box-shadow: 0 8px 18px rgba(27, 52, 97, 0.12);
+  box-shadow: var(--secondary-hover-shadow);
 }
 
 .card-grid {
@@ -249,6 +295,10 @@ h1 {
   .card,
   .details {
     padding: 24px;
+  }
+
+  .style-selector {
+    margin-bottom: 24px;
   }
 
   .support-card {
