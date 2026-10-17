@@ -8,6 +8,10 @@ const styles = [
 ];
 const styleSelect = document.createElement("select");
 const savedStyle = localStorage.getItem("jfunk42-site-style");
+const hasSavedStyle = styles.some(([value]) => value === savedStyle);
+const initialStyle = hasSavedStyle
+  ? savedStyle
+  : styles[Math.floor(Math.random() * styles.length)][0];
 
 styleSelect.id = "style-select";
 styleSelect.name = "style";
@@ -19,9 +23,11 @@ for (const [value, label] of styles) {
   styleSelect.append(option);
 }
 
-if (savedStyle && styles.some(([value]) => value === savedStyle)) {
-  document.documentElement.dataset.style = savedStyle;
-  styleSelect.value = savedStyle;
+document.documentElement.dataset.style = initialStyle;
+styleSelect.value = initialStyle;
+
+if (!hasSavedStyle) {
+  localStorage.setItem("jfunk42-site-style", initialStyle);
 }
 
 const footer = document.createElement("footer");
@@ -36,9 +42,35 @@ selector.append(label, styleSelect);
 footer.append(selector);
 document.body.append(footer);
 
+function trackTheme(eventName, parameters) {
+  if (typeof window.gtag !== "function") {
+    return;
+  }
+
+  window.gtag("event", eventName, parameters);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  trackTheme("site_theme_viewed", {
+    theme_name: initialStyle,
+  });
+
+  if (!hasSavedStyle) {
+    trackTheme("site_theme_assigned", {
+      theme_name: initialStyle,
+      selection_method: "random",
+    });
+  }
+}, { once: true });
+
 styleSelect.addEventListener("change", () => {
+  const previousStyle = document.documentElement.dataset.style;
   const selectedStyle = styleSelect.value;
 
   document.documentElement.dataset.style = selectedStyle;
   localStorage.setItem("jfunk42-site-style", selectedStyle);
+  trackTheme("site_theme_changed", {
+    theme_from: previousStyle,
+    theme_to: selectedStyle,
+  });
 });
