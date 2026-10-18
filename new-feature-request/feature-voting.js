@@ -132,6 +132,44 @@ function updateAccessUi(access) {
   };
 }
 
+function canSuggestFeatures(access) {
+  if (!access.authenticated || !access.membershipTier) {
+    return false;
+  }
+
+  return !/^euler(?:\s+tier)?$/i.test(access.membershipTier.trim());
+}
+
+function updateSuggestionUi(access) {
+  const request = document.querySelector("#suggestion-request");
+  const textarea = document.querySelector("#feature-suggestion");
+  const submit = document.querySelector("#feature-suggestion-submit");
+  const status = document.querySelector("#feature-suggestion-status");
+  const upgradeLink = document.querySelector("#feature-suggestion-upgrade-link");
+  const isEuler = access.authenticated
+    && /^euler(?:\s+tier)?$/i.test((access.membershipTier || "").trim());
+
+  request.classList.toggle("suggestion-request-locked", !canSuggestFeatures(access));
+  upgradeLink.hidden = false;
+  textarea.disabled = true;
+  submit.disabled = true;
+
+  if (!access.authenticated) {
+    status.textContent = "Visitors cannot submit feature requests. Join Patreon at the Pi tier or above to unlock requests.";
+    upgradeLink.textContent = "Join Patreon to unlock requests";
+    return;
+  }
+
+  if (isEuler) {
+    status.textContent = "Euler-tier members cannot submit feature requests. Upgrade to the Pi tier or above to unlock requests.";
+    upgradeLink.textContent = "Upgrade to the Pi tier";
+    return;
+  }
+
+  status.textContent = "Your membership allows feature requests. Secure request submission will be enabled when authenticated request storage is available.";
+  upgradeLink.hidden = true;
+}
+
 async function loadPatreonSession() {
   const response = await fetch(patreonSessionUrl, {
     cache: "no-store",
@@ -155,6 +193,48 @@ function getFeatureTotals(featureId, serverTotals, state) {
   const down = Number(serverFeatureTotals.down || 0) + Number(localFeatureTotals.down || 0);
 
   return { up, down, net: up - down };
+}
+
+function animateFeatureReorder(featureList, previousPositions) {
+  if (!previousPositions.size || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    return;
+  }
+
+  const movedItems = [];
+  for (const item of featureList.children) {
+    const previousPosition = previousPositions.get(item.dataset.featureId);
+    if (!previousPosition) {
+      continue;
+    }
+
+    const offset = previousPosition.top - item.getBoundingClientRect().top;
+    if (!offset) {
+      continue;
+    }
+
+    item.classList.add("feature-reordering");
+    item.style.transition = "none";
+    item.style.transform = `translateY(${offset}px)`;
+    movedItems.push(item);
+  }
+
+  if (!movedItems.length) {
+    return;
+  }
+
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      for (const item of movedItems) {
+        item.style.transition = "";
+        item.style.transform = "";
+      }
+      window.setTimeout(() => {
+        for (const item of movedItems) {
+          item.classList.remove("feature-reordering");
+        }
+      }, 1200);
+    });
+  });
 }
 
 function createVoteButton(direction, feature, state, serverTotals, access, renderFeatures) {
@@ -210,6 +290,9 @@ function createTotal(label, value) {
 
 function renderFeatureList(features, serverTotals, state, access) {
   const featureList = document.querySelector("#feature-list");
+  const previousPositions = new Map(
+    Array.from(featureList.children, (item) => [item.dataset.featureId, item.getBoundingClientRect()]),
+  );
   const sortedFeatures = [...features].sort((first, second) => {
     const firstTotals = getFeatureTotals(first.id, serverTotals, state);
     const secondTotals = getFeatureTotals(second.id, serverTotals, state);
@@ -230,6 +313,7 @@ function renderFeatureList(features, serverTotals, state, access) {
     const net = document.createElement("span");
     const actions = document.createElement("div");
 
+    item.dataset.featureId = feature.id;
     article.className = "feature-card";
     area.className = "feature-area";
     area.textContent = feature.area;
@@ -259,6 +343,7 @@ function renderFeatureList(features, serverTotals, state, access) {
   }
 
   featureList.replaceChildren(fragment);
+  animateFeatureReorder(featureList, previousPositions);
 }
 
 async function loadJson(url) {
@@ -281,6 +366,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     sessionUnavailable = true;
   }
   updateAccessUi(access);
+  updateSuggestionUi(access);
 
   if (!voteState) {
     document.querySelector("#vote-status").textContent = (
