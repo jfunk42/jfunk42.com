@@ -477,8 +477,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     return;
   }
 
-  configureSuggestionForm(voteState, access);
-
   setVoteStatus(
     voteState,
     access,
@@ -505,6 +503,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     setVoteStatus(voteState, access, "Voting is temporarily unavailable.");
     return;
   }
+
+  configureSuggestionForm(voteState, access);
 
   if (recoveredInvalidVoteState) {
     setVoteStatus(
