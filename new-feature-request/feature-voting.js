@@ -31,7 +31,7 @@ function getVoteState() {
   }
 
   if (!serializedState) {
-    return { week: currentWeek, used: 0, localTotals: {}, eulerTest: {} };
+    return { week: currentWeek, used: 0, localTotals: {}, piTest: {} };
   }
 
   try {
@@ -43,8 +43,8 @@ function getVoteState() {
         localTotals: typeof savedState.localTotals === "object" && savedState.localTotals
           ? savedState.localTotals
           : {},
-        eulerTest: typeof savedState.eulerTest === "object" && savedState.eulerTest
-          ? savedState.eulerTest
+        piTest: typeof savedState.piTest === "object" && savedState.piTest
+          ? savedState.piTest
           : {},
       };
     }
@@ -52,7 +52,7 @@ function getVoteState() {
     recoveredInvalidVoteState = true;
   }
 
-  return { week: currentWeek, used: 0, localTotals: {}, eulerTest: {} };
+  return { week: currentWeek, used: 0, localTotals: {}, piTest: {} };
 }
 
 function saveVoteState(state) {
@@ -84,13 +84,18 @@ function getAccessParameters(access) {
   };
 }
 
+function isPiTier(access) {
+  return access.authenticated
+    && /^pi(?:\s+tier)?$/i.test((access.membershipTier || "").trim());
+}
+
 function isEulerTier(access) {
   return access.authenticated
     && /^euler(?:\s+tier)?$/i.test((access.membershipTier || "").trim());
 }
 
-function getEulerTestRemainingSeconds(state, action) {
-  const lastUsedAt = Number(state.eulerTest?.[action] || 0);
+function getPiTestRemainingSeconds(state, action) {
+  const lastUsedAt = Number(state.piTest?.[action] || 0);
   return Math.max((lastUsedAt + 60 * 60 * 1000 - Date.now()) / 1000, 0);
 }
 
@@ -103,11 +108,16 @@ function setVoteStatus(state, access, message) {
     return;
   }
 
-  if (isEulerTier(access)) {
-    const remainingSeconds = Math.ceil(getEulerTestRemainingSeconds(state, "vote"));
+  if (isPiTier(access)) {
+    const remainingSeconds = Math.ceil(getPiTestRemainingSeconds(state, "vote"));
     status.textContent = remainingSeconds
-      ? `Euler testing: your next verified vote is available in ${Math.ceil(remainingSeconds / 60)} minutes.`
-      : "Euler testing: one verified vote is available now.";
+      ? `Pi testing: your next verified vote is available in ${Math.ceil(remainingSeconds / 60)} minutes.`
+      : "Pi testing: one verified vote is available now.";
+    return;
+  }
+
+  if (isEulerTier(access)) {
+    status.textContent = `Your Patreon login is verified for the Euler tier. You have ${remaining} of 2 weekly votes remaining.`;
     return;
   }
 
@@ -156,7 +166,7 @@ function updateAccessUi(access) {
 }
 
 function canSuggestFeatures(access) {
-  return isEulerTier(access);
+  return isPiTier(access);
 }
 
 function updateSuggestionUi(access) {
@@ -165,12 +175,12 @@ function updateSuggestionUi(access) {
   const submit = document.querySelector("#feature-suggestion-submit");
   const status = document.querySelector("#feature-suggestion-status");
   const upgradeLink = document.querySelector("#feature-suggestion-upgrade-link");
-  const isEuler = isEulerTier(access);
+  const isPi = isPiTier(access);
 
   request.classList.toggle("suggestion-request-locked", !canSuggestFeatures(access));
   upgradeLink.hidden = false;
-  textarea.disabled = !isEuler;
-  submit.disabled = !isEuler;
+  textarea.disabled = !isPi;
+  submit.disabled = !isPi;
 
   if (!access.authenticated) {
     status.textContent = "Visitors cannot submit feature requests. Join Patreon at the Pi tier or above to unlock requests.";
@@ -178,13 +188,19 @@ function updateSuggestionUi(access) {
     return;
   }
 
-  if (isEuler) {
-    status.textContent = "Euler testing is enabled: submit one feature request per hour.";
+  if (isPi) {
+    status.textContent = "Pi testing is enabled: submit one feature request per hour.";
     upgradeLink.hidden = true;
     return;
   }
 
-  status.textContent = "Feature requests are temporarily reserved for Euler-tier testing.";
+  if (isEulerTier(access)) {
+    status.textContent = "Euler-tier members cannot submit feature requests. Upgrade to the Pi tier to join testing.";
+    upgradeLink.textContent = "Upgrade to the Pi tier";
+    return;
+  }
+
+  status.textContent = "Feature requests are temporarily reserved for Pi-tier testing.";
   upgradeLink.textContent = "View Patreon tiers";
 }
 
@@ -278,26 +294,61 @@ function animateFeatureReorder(featureList, previousPositions) {
   });
 }
 
+function configureSuggestionForm(state, access) {
+  const form = document.querySelector("#suggestion-request form");
+  const textarea = document.querySelector("#feature-suggestion");
+  const submit = document.querySelector("#feature-suggestion-submit");
+  const status = document.querySelector("#feature-suggestion-status");
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    if (!isPiTier(access)) {
+      return;
+    }
+
+    const suggestion = textarea.value.trim();
+    if (!suggestion) {
+      status.textContent = "Enter a feature request before submitting.";
+      return;
+    }
+
+    submit.disabled = true;
+    try {
+      await postPatreonJson(patreonSuggestionUrl, { suggestion });
+      state.piTest.suggestion = Date.now();
+      saveVoteState(state);
+      textarea.value = "";
+      status.textContent = "Thanks—your Pi testing feature request was recorded.";
+      textarea.disabled = true;
+      submit.disabled = true;
+      trackVoteEvent("patreon_feature_suggestion", getAccessParameters(access));
+    } catch (error) {
+      status.textContent = error instanceof Error ? error.message : "Your feature request could not be recorded.";
+      submit.disabled = false;
+    }
+  });
+}
+
 function createVoteButton(direction, feature, state, serverTotals, access, renderFeatures) {
   const button = document.createElement("button");
   button.className = `vote-button vote-${direction}`;
   button.type = "button";
   button.textContent = direction === "up" ? "Vote up" : "Vote down";
-  button.disabled = isEulerTier(access)
-    ? getEulerTestRemainingSeconds(state, "vote") > 0
+  button.disabled = isPiTier(access)
+    ? getPiTestRemainingSeconds(state, "vote") > 0
     : state.used >= visitorVoteLimit;
 
   button.addEventListener("click", async () => {
-    if (isEulerTier(access)) {
+    if (isPiTier(access)) {
       button.disabled = true;
       try {
         await postPatreonJson(patreonVoteUrl, { direction, featureId: feature.id });
         const featureTotals = state.localTotals[feature.id] || { up: 0, down: 0 };
         featureTotals[direction] += 1;
         state.localTotals[feature.id] = featureTotals;
-        state.eulerTest.vote = Date.now();
+        state.piTest.vote = Date.now();
         saveVoteState(state);
-        setVoteStatus(state, access, "Thanks—your verified Euler testing vote was recorded.");
+        setVoteStatus(state, access, "Thanks—your verified Pi testing vote was recorded.");
         trackVoteEvent("patreon_feature_vote", {
           feature_id: feature.id,
           vote_direction: direction,
@@ -319,41 +370,6 @@ function createVoteButton(direction, feature, state, serverTotals, access, rende
       );
       renderFeatures();
       return;
-    }
-
-    function configureSuggestionForm(state, access) {
-      const form = document.querySelector("#suggestion-request form");
-      const textarea = document.querySelector("#feature-suggestion");
-      const submit = document.querySelector("#feature-suggestion-submit");
-      const status = document.querySelector("#feature-suggestion-status");
-
-      form.addEventListener("submit", async (event) => {
-        event.preventDefault();
-        if (!isEulerTier(access)) {
-          return;
-        }
-
-        const suggestion = textarea.value.trim();
-        if (!suggestion) {
-          status.textContent = "Enter a feature request before submitting.";
-          return;
-        }
-
-        submit.disabled = true;
-        try {
-          await postPatreonJson(patreonSuggestionUrl, { suggestion });
-          state.eulerTest.suggestion = Date.now();
-          saveVoteState(state);
-          textarea.value = "";
-          status.textContent = "Thanks—your Euler testing feature request was recorded.";
-          textarea.disabled = true;
-          submit.disabled = true;
-          trackVoteEvent("patreon_feature_suggestion", getAccessParameters(access));
-        } catch (error) {
-          status.textContent = error instanceof Error ? error.message : "Your feature request could not be recorded.";
-          submit.disabled = false;
-        }
-      });
     }
 
     const featureTotals = state.localTotals[feature.id] || { up: 0, down: 0 };
