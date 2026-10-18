@@ -10,7 +10,7 @@
     <description>Short, source-backed briefings on new discoveries in science, space, health, and technology.</description>
     <language>en-us</language>
     <copyright>Copyright 2026 James Funk</copyright>
-    <lastBuildDate>Sat, 17 Oct 2026 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 23:00:00 +0000</lastBuildDate>
     <managingEditor>james.c.funk@gmail.com (James Funk)</managingEditor>
     <webMaster>james.c.funk@gmail.com (James Funk)</webMaster>
     <itunes:title>jFunk42 Science Brief</itunes:title>
@@ -31,6 +31,21 @@
       <title>jFunk42 Science Brief</title>
       <link>https://jfunk42.com/podcasts/science-brief/</link>
     </image>
+
+    <item>
+      <title>Unlocking the Mysteries of Mars&#x27; Moons with MMX</title>
+      <description><![CDATA["Japan's JAXA and NASA are partnering on the MMX mission, the first planned round-trip journey to the Martian region, to collect samples from Mars' moons and explore their origins."]]></description>
+      <content:encoded><![CDATA[<p>&quot;Japan&#x27;s JAXA and NASA are partnering on the MMX mission, the first planned round-trip journey to the Martian region, to collect samples from Mars&#x27; moons and explore their origins.&quot;</p><p><a href="https://jfunk42.com/podcast-quizzes/#Unlocking%20the%20Mysteries%20of%20Mars%27%20Moons%20with%20MMX">Read the sources and take the episode quiz.</a></p><p><a href="https://jfunk42.com/podcasts/science-brief/transcripts/2026-10-18-23.html">Read the full transcript.</a></p>]]></content:encoded>
+      <link>https://jfunk42.com/podcast-quizzes/#Unlocking%20the%20Mysteries%20of%20Mars%27%20Moons%20with%20MMX</link>
+      <guid isPermaLink="false">jfunk42-science-brief-2026-10-18-23</guid>
+      <pubDate>Sun, 18 Oct 2026 23:00:00 +0000</pubDate>
+      <enclosure url="https://podcast.jfunk42.com/jfunk42-science-brief/episodes/2026-10-18-23.mp3" length="14321037" type="audio/mpeg"/>
+      <itunes:title>Unlocking the Mysteries of Mars&#x27; Moons with MMX</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:duration>24:17</itunes:duration>
+      <itunes:image href="https://podcast.jfunk42.com/jfunk42-science-brief/artwork/2026-10-18-23-cover.png"/>
+    </item>
 
     <item>
       <title>Changing Poles: Unpacking 2026&#x27;s Polar Sea Ice Declines and Ocean Signals</title>

@@ -1,5 +1,106 @@
 [
   {
+    "title": "Unlocking the Mysteries of Mars' Moons with MMX",
+    "publishedAt": "2026-10-18",
+    "description": "\"Japan's JAXA and NASA are partnering on the MMX mission, the first planned round-trip journey to the Martian region, to collect samples from Mars' moons and explore their origins.\"",
+    "tags": [
+      "Space Exploration",
+      "Mars Moons",
+      "MMX Mission",
+      "Planetary Science"
+    ],
+    "questions": [
+      {
+        "question": "What are the two main competing hypotheses discussed regarding the origins of Mars' moons, Phobos and Deimos?",
+        "choices": [
+          {
+            "text": "They are either primitive carbonaceous asteroids captured by Mars' gravity or debris fragments launched by a giant impact on early Mars.",
+            "correct": true,
+            "explanation": " Planetary scientists debate whether the moons are primitive asteroids captured early in solar system history or planetary material blasted into orbit by a massive collision with ancient Mars.",
+            "source": {
+              "label": "NASA to Help Unlock Mysteries of Mars\u2019 Moons in Upcoming Mission",
+              "url": "https://science.nasa.gov/directorates/smd/planetary-science-division/nasa-to-help-unlock-mysteries-of-mars-moons-in-upcoming-mission/"
+            }
+          },
+          {
+            "text": "They are either active icy comets trapped in orbit or volcanic ejecta erupted directly from Olympus Mons.",
+            "correct": false,
+            "explanation": "The podcast does not frame the moons as active comets or volcanic ejecta from Olympus Mons, but as either captured carbonaceous asteroids or giant-impact debris."
+          },
+          {
+            "text": "They are either artificial fragments created by early planetary collisions or chunks torn directly from Earth's Moon.",
+            "correct": false,
+            "explanation": "The leading hypotheses focus specifically on captured solar system asteroids or impact ejecta from early Mars, not material torn from Earth's Moon or artificial fragments."
+          },
+          {
+            "text": "They are either metallic planetary cores remaining from a destroyed world or gas cloud condensations that formed after Mars cooled.",
+            "correct": false,
+            "explanation": "Neither metallic core remnants nor post-cooling gas cloud condensations were discussed as the primary origin hypotheses for Phobos and Deimos."
+          }
+        ]
+      },
+      {
+        "question": "How can physical samples from Mars' moons help scientists better understand the potential origin of life on early Earth?",
+        "choices": [
+          {
+            "text": "They reveal the distribution of volatile compounds like water and organic molecules that provided the prebiotic raw materials for terrestrial planets.",
+            "correct": true,
+            "explanation": "Analyzing the volatile and elemental composition of primitive solar system bodies helps map how water and organic precursors were distributed across the early inner solar system.",
+            "source": {
+              "label": "NASA to Help Unlock Mysteries of Mars\u2019 Moons in Upcoming Mission",
+              "url": "https://science.nasa.gov/directorates/smd/planetary-science-division/nasa-to-help-unlock-mysteries-of-mars-moons-in-upcoming-mission/"
+            }
+          },
+          {
+            "text": "They contain biological fossils that prove living organisms originated on Phobos before migrating to Earth.",
+            "correct": false,
+            "explanation": "The podcast explicitly clarifies that studying volatile organic molecules involves prebiotic chemistry and cosmic inventory, not biological fossils or alien life forms."
+          },
+          {
+            "text": "They demonstrate that cosmic rays on airless bodies spontaneously synthesize living bacterial cells from surface dust.",
+            "correct": false,
+            "explanation": "Space weathering from cosmic rays alters surface regolith, but it does not generate living bacterial cells."
+          },
+          {
+            "text": "They show that liquid oceans existed on Phobos and Deimos during the formation of the early solar nebula.",
+            "correct": false,
+            "explanation": "Small, airless bodies like Phobos and Deimos never had liquid surface oceans; scientists examine their volatile elements to trace raw chemical building blocks."
+          }
+        ]
+      },
+      {
+        "question": "What primary analytical challenge must geochemists address when interpreting returned regolith from Phobos' surface?",
+        "choices": [
+          {
+            "text": "The surface dust is a complex mix altered by space weathering, cosmic rays, and potential secondary ejecta thrown off Mars.",
+            "correct": true,
+            "explanation": "Because Phobos undergoes space weathering and receives dust transferred from Martian impacts, scientists must carefully distinguish native moon material from space-altered residue and imported planetary debris.",
+            "source": {
+              "label": "Japan to launch historic round-trip mission to Mars moon",
+              "url": "https://phys.org/news/2026-10-japan-historic-mission-mars-moon.html"
+            }
+          },
+          {
+            "text": "The extreme surface gravity of Phobos crushes delicate regolith structures into unanalyzable glass.",
+            "correct": false,
+            "explanation": "Phobos is a small body with microgravity, not extreme high surface gravity."
+          },
+          {
+            "text": "A thick, corrosive atmospheric layer on Phobos reacts with the sample container during ascent.",
+            "correct": false,
+            "explanation": "Phobos is an airless body with no thick or corrosive atmosphere."
+          },
+          {
+            "text": "The complete absence of orbital surveys before touchdown leaves researchers without any context regarding where samples originated.",
+            "correct": false,
+            "explanation": "MMX will conduct extensive prior orbital surveys and surface mapping of both Phobos and Deimos to contextualize the landing and sampling site."
+          }
+        ]
+      }
+    ],
+    "transcriptUrl": "https://jfunk42.com/podcasts/science-brief/transcripts/2026-10-18-23.html"
+  },
+  {
     "title": "Changing Poles: Unpacking 2026's Polar Sea Ice Declines and Ocean Signals",
     "publishedAt": "2026-10-17",
     "description": "Satellite observations in 2026 reveal persistent Arctic sea ice thinning and a third-lowest winter maximum in Antarctica, raising questions about whether both poles are entering new climate regimes.",
