@@ -41,14 +41,15 @@
     <section class="details voting-status" aria-labelledby="voting-status-title">
       <div>
         <p class="support-label">Your voting allowance</p>
-        <h2 id="voting-status-title">Visitor access</h2>
+        <h2 id="voting-status-title">Checking Patreon access…</h2>
       </div>
       <p id="vote-status" class="section-copy" role="status">
         Loading your weekly vote allowance…
       </p>
       <p class="section-copy">
-        <a class="text-link" href="https://www.patreon.com/jFunk42">Join or log in on Patreon</a>
-        to unlock tier-weighted voting when verified member login becomes available.
+        <a id="patreon-auth-link" class="text-link" href="https://api.jfunk42.com/auth/patreon">Log in with Patreon</a>
+        to verify your membership tier. Member-tier vote limits will be enabled when authenticated
+        vote recording is added to the API.
       </p>
     </section>
 

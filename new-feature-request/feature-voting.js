@@ -2,6 +2,9 @@ const visitorVoteLimit = 2;
 const visitorVoteStorageKey = "jfunk42-feature-request-visitor-votes";
 const featureCatalogUrl = "/new-feature-request/features.json";
 const voteTotalsUrl = "/new-feature-request/votes.json";
+const patreonLoginUrl = "https://api.jfunk42.com/auth/patreon";
+const patreonLogoutUrl = "https://api.jfunk42.com/api/logout";
+const patreonSessionUrl = "https://api.jfunk42.com/api/session";
 let recoveredInvalidVoteState = false;
 
 function getWeekKey(date = new Date()) {
@@ -62,15 +65,87 @@ function trackVoteEvent(eventName, parameters) {
   }
 }
 
-function setVoteStatus(state, message) {
+function getAccessParameters(access) {
+  if (!access.authenticated) {
+    return {
+      membership_tier: "visitor",
+      voter_access: "visitor",
+    };
+  }
+
+  return {
+    membership_tier: access.membershipTier || "unmapped",
+    voter_access: "member",
+  };
+}
+
+function setVoteStatus(state, access, message) {
   const status = document.querySelector("#vote-status");
   const remaining = Math.max(visitorVoteLimit - state.used, 0);
 
-  status.textContent = message || (
-    remaining === 1
-      ? "You have 1 visitor vote remaining this week."
-      : `You have ${remaining} visitor votes remaining this week.`
-  );
+  if (message) {
+    status.textContent = message;
+    return;
+  }
+
+  const localAllowance = remaining === 1
+    ? "1 local visitor vote remaining this week."
+    : `${remaining} local visitor votes remaining this week.`;
+  status.textContent = access.authenticated
+    ? `Your Patreon login is verified${access.membershipTier ? ` for the ${access.membershipTier} tier` : ""}. ${localAllowance}`
+    : `You have ${remaining === 1 ? "1 visitor vote" : `${remaining} visitor votes`} remaining this week.`;
+}
+
+function updateAccessUi(access) {
+  const title = document.querySelector("#voting-status-title");
+  const authLink = document.querySelector("#patreon-auth-link");
+
+  if (!access.authenticated) {
+    title.textContent = "Visitor access";
+    authLink.textContent = "Log in with Patreon";
+    authLink.href = patreonLoginUrl;
+    authLink.onclick = null;
+    return;
+  }
+
+  title.textContent = access.membershipTier
+    ? `Patreon access: ${access.membershipTier}`
+    : "Patreon member access";
+  authLink.textContent = "Log out of Patreon";
+  authLink.href = patreonLogoutUrl;
+  authLink.onclick = async (event) => {
+    event.preventDefault();
+    authLink.setAttribute("aria-busy", "true");
+    try {
+      const response = await fetch(patreonLogoutUrl, {
+        credentials: "include",
+        method: "POST",
+      });
+      if (!response.ok) {
+        throw new Error(`Unable to log out: ${response.status}`);
+      }
+      window.location.reload();
+    } catch {
+      authLink.removeAttribute("aria-busy");
+      authLink.textContent = "Log out failed; try again";
+    }
+  };
+}
+
+async function loadPatreonSession() {
+  const response = await fetch(patreonSessionUrl, {
+    cache: "no-store",
+    credentials: "include",
+  });
+  if (!response.ok) {
+    throw new Error(`Unable to load Patreon session: ${response.status}`);
+  }
+
+  const session = await response.json();
+  return {
+    authenticated: session.authenticated === true,
+    membershipTier: typeof session.membershipTier === "string" ? session.membershipTier : null,
+  };
 }
 
 function getFeatureTotals(featureId, serverTotals, state) {
@@ -82,7 +157,7 @@ function getFeatureTotals(featureId, serverTotals, state) {
   return { up, down, net: up - down };
 }
 
-function createVoteButton(direction, feature, state, serverTotals, renderFeatures) {
+function createVoteButton(direction, feature, state, serverTotals, access, renderFeatures) {
   const button = document.createElement("button");
   button.className = `vote-button vote-${direction}`;
   button.type = "button";
@@ -93,6 +168,7 @@ function createVoteButton(direction, feature, state, serverTotals, renderFeature
     if (state.used >= visitorVoteLimit) {
       setVoteStatus(
         state,
+        access,
         "Your two visitor votes are used for this week. Join or log in on Patreon for member benefits.",
       );
       renderFeatures();
@@ -106,17 +182,16 @@ function createVoteButton(direction, feature, state, serverTotals, renderFeature
     if (!saveVoteState(state)) {
       featureTotals[direction] -= 1;
       state.used -= 1;
-      setVoteStatus(state, "Your vote could not be stored locally, so it was not recorded.");
+      setVoteStatus(state, access, "Your vote could not be stored locally, so it was not recorded.");
       return;
     }
 
-    setVoteStatus(state, "Thanks—your visitor vote was recorded.");
+    setVoteStatus(state, access, "Thanks—your local visitor vote was recorded.");
     trackVoteEvent("patreon_feature_vote", {
       feature_id: feature.id,
       vote_direction: direction,
       vote_weight: 1,
-      voter_access: "visitor",
-      membership_tier: "visitor",
+      ...getAccessParameters(access),
     });
     renderFeatures();
   });
@@ -133,7 +208,7 @@ function createTotal(label, value) {
   return total;
 }
 
-function renderFeatureList(features, serverTotals, state) {
+function renderFeatureList(features, serverTotals, state, access) {
   const featureList = document.querySelector("#feature-list");
   const sortedFeatures = [...features].sort((first, second) => {
     const firstTotals = getFeatureTotals(first.id, serverTotals, state);
@@ -170,11 +245,11 @@ function renderFeatureList(features, serverTotals, state) {
 
     actions.className = "vote-actions";
     actions.append(
-      createVoteButton("up", feature, state, serverTotals, () => {
-        renderFeatureList(features, serverTotals, state);
+      createVoteButton("up", feature, state, serverTotals, access, () => {
+        renderFeatureList(features, serverTotals, state, access);
       }),
-      createVoteButton("down", feature, state, serverTotals, () => {
-        renderFeatureList(features, serverTotals, state);
+      createVoteButton("down", feature, state, serverTotals, access, () => {
+        renderFeatureList(features, serverTotals, state, access);
       }),
     );
     votePanel.append(voteTotals, actions);
@@ -197,17 +272,31 @@ async function loadJson(url) {
 
 document.addEventListener("DOMContentLoaded", async () => {
   const voteState = getVoteState();
+  let access = { authenticated: false, membershipTier: null };
+  let sessionUnavailable = false;
+
+  try {
+    access = await loadPatreonSession();
+  } catch {
+    sessionUnavailable = true;
+  }
+  updateAccessUi(access);
+
   if (!voteState) {
     document.querySelector("#vote-status").textContent = (
       "Voting is unavailable because this browser cannot store your weekly allowance."
     );
-    trackVoteEvent("patreon_feature_vote_storage_unavailable", {
-      voter_access: "visitor",
-    });
+    trackVoteEvent("patreon_feature_vote_storage_unavailable", getAccessParameters(access));
     return;
   }
 
-  setVoteStatus(voteState);
+  setVoteStatus(
+    voteState,
+    access,
+    sessionUnavailable
+      ? "Patreon login status is temporarily unavailable. Visitor voting is still available."
+      : undefined,
+  );
 
   try {
     const [catalog, totals] = await Promise.all([
@@ -219,23 +308,21 @@ document.addEventListener("DOMContentLoaded", async () => {
       throw new Error("Feature catalog is empty.");
     }
 
-    renderFeatureList(features, totals.features || {}, voteState);
+    renderFeatureList(features, totals.features || {}, voteState, access);
   } catch {
     document.querySelector("#feature-list").textContent = (
       "Feature requests are temporarily unavailable. Please try again later."
     );
-    setVoteStatus(voteState, "Voting is temporarily unavailable.");
+    setVoteStatus(voteState, access, "Voting is temporarily unavailable.");
     return;
   }
 
   if (recoveredInvalidVoteState) {
     setVoteStatus(
       voteState,
+      access,
       "Your saved visitor allowance could not be read, so it has been reset for this week.",
     );
   }
-  trackVoteEvent("patreon_feature_board_viewed", {
-    voter_access: "visitor",
-    membership_tier: "visitor",
-  });
+  trackVoteEvent("patreon_feature_board_viewed", getAccessParameters(access));
 }, { once: true });
