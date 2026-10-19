@@ -10,7 +10,7 @@
     <description>Short, source-backed briefings on new discoveries in science, space, health, and technology.</description>
     <language>en-us</language>
     <copyright>Copyright 2026 James Funk</copyright>
-    <lastBuildDate>Sun, 18 Oct 2026 23:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 09:00:00 +0000</lastBuildDate>
     <managingEditor>james.c.funk@gmail.com (James Funk)</managingEditor>
     <webMaster>james.c.funk@gmail.com (James Funk)</webMaster>
     <itunes:title>jFunk42 Science Brief</itunes:title>
@@ -31,6 +31,21 @@
       <title>jFunk42 Science Brief</title>
       <link>https://jfunk42.com/podcasts/science-brief/</link>
     </image>
+
+    <item>
+      <title>Artemis Mission Architecture: Heat Shield Validation and Launch Infrastructure</title>
+      <description><![CDATA[NASA's post-flight thermal protection analysis confirms Orion's heat shield effectively safeguarded crew and systems after the April 10, 2026 Artemis II splashdown, supported by ground propellant management and center leadership updates.]]></description>
+      <content:encoded><![CDATA[<p>NASA&#x27;s post-flight thermal protection analysis confirms Orion&#x27;s heat shield effectively safeguarded crew and systems after the April 10, 2026 Artemis II splashdown, supported by ground propellant management and center leadership updates.</p><p><a href="https://jfunk42.com/podcast-quizzes/#Artemis%20Mission%20Architecture%3A%20Heat%20Shield%20Validation%20and%20Launch%20Infrastructure">Read the sources and take the episode quiz.</a></p><p><a href="https://jfunk42.com/podcasts/science-brief/transcripts/2026-10-19-09.html">Read the full transcript.</a></p>]]></content:encoded>
+      <link>https://jfunk42.com/podcast-quizzes/#Artemis%20Mission%20Architecture%3A%20Heat%20Shield%20Validation%20and%20Launch%20Infrastructure</link>
+      <guid isPermaLink="false">jfunk42-science-brief-2026-10-19-09</guid>
+      <pubDate>Mon, 19 Oct 2026 09:00:00 +0000</pubDate>
+      <enclosure url="https://podcast.jfunk42.com/jfunk42-science-brief/episodes/2026-10-19-09.mp3" length="12593973" type="audio/mpeg"/>
+      <itunes:title>Artemis Mission Architecture: Heat Shield Validation and Launch Infrastructure</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:duration>21:03</itunes:duration>
+      <itunes:image href="https://podcast.jfunk42.com/jfunk42-science-brief/artwork/2026-10-19-09-cover.png"/>
+    </item>
 
     <item>
       <title>Unlocking the Mysteries of Mars&#x27; Moons with MMX</title>

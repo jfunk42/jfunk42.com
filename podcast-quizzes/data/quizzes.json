@@ -1,5 +1,106 @@
 [
   {
+    "title": "Artemis Mission Architecture: Heat Shield Validation and Launch Infrastructure",
+    "publishedAt": "2026-10-19",
+    "description": "NASA's post-flight thermal protection analysis confirms Orion's heat shield effectively safeguarded crew and systems after the April 10, 2026 Artemis II splashdown, supported by ground propellant management and center leadership updates.",
+    "tags": [
+      "Artemis II",
+      "Orion Heat Shield",
+      "Ground Systems",
+      "NASA Leadership"
+    ],
+    "questions": [
+      {
+        "question": "What did NASA's post-flight physical analysis confirm regarding Orion's thermal protection system following the April 10, 2026 Artemis II splashdown?",
+        "choices": [
+          {
+            "text": "The thermal protection system performed as designed, successfully safeguarding both the crew and critical internal Orion systems.",
+            "correct": true,
+            "explanation": "Months of rigorous physical measurements and data analysis confirmed that Orion's heat shield successfully protected the crew compartment and spacecraft systems from thermal loads during reentry.",
+            "source": {
+              "label": "Artemis II Heat Shield After Splashdown",
+              "url": "https://www.nasa.gov/image-article/artemis-ii-heat-shield-after-splashdown/"
+            }
+          },
+          {
+            "text": "The heat shield suffered severe thermal penetration that compromised internal cabin systems.",
+            "correct": false,
+            "explanation": "This is incorrect because the official post-flight analysis confirmed the thermal protection system performed as designed and kept internal heat transfer within safe limits."
+          },
+          {
+            "text": "Initial underwater photos taken by U.S. Navy divers provided all required data to fully certify the heat shield without physical laboratory testing.",
+            "correct": false,
+            "explanation": "This is incorrect because visual inspection alone cannot reveal microscopic structural changes or thermal penetration; NASA required months of physical off-site measurements to confirm performance."
+          },
+          {
+            "text": "The heat shield completely failed due to excessive material ablation, requiring a redesign of the outer layer for future capsules.",
+            "correct": false,
+            "explanation": "This is incorrect because post-flight empirical measurements verified that heat shield performance and manufacturing techniques were sound for future crewed deep space missions."
+          }
+        ]
+      },
+      {
+        "question": "What central operational responsibility did Allison Mjoen fulfill for NASA's Exploration Ground Systems Program prior to the Space Launch System (SLS) launch?",
+        "choices": [
+          {
+            "text": "Managing operational workflows for transferring supercooled cryogenic propellant into the SLS core stage.",
+            "correct": true,
+            "explanation": "As operations manager for the Exploration Ground Systems Program, Allison Mjoen helped design and execute the procedures required to safely load supercooled fuel into the rocket's core stage under strict safety and timing parameters.",
+            "source": {
+              "label": "I Am Artemis: Allison Mjoen",
+              "url": "https://www.nasa.gov/missions/station/i-am-artemis-allison-mjoen/"
+            }
+          },
+          {
+            "text": "Leading the U.S. Navy dive team responsible for capturing underwater imagery of the capsule after splashdown.",
+            "correct": false,
+            "explanation": "This is incorrect because U.S. Navy divers conducted underwater post-splashdown imaging of Orion, whereas Allison Mjoen manages launchpad ground operations."
+          },
+          {
+            "text": "Serving as center director at Marshall Space Flight Center to manage propulsion engine fabrication.",
+            "correct": false,
+            "explanation": "This is incorrect because Stephen Cash was appointed director of Marshall Space Flight Center, not Allison Mjoen."
+          },
+          {
+            "text": "Calculating real-time reentry heating models for the Orion capsule during atmospheric entry.",
+            "correct": false,
+            "explanation": "This is incorrect because Mjoen's role focused on ground infrastructure and managing supercooled propellant loading on the launchpad prior to lift-off."
+          }
+        ]
+      },
+      {
+        "question": "Who was named as the new director of NASA's Marshall Space Flight Center by NASA Administrator Jared Isaacman?",
+        "choices": [
+          {
+            "text": "Stephen Cash, a veteran aerospace engineer with over four decades of spaceflight experience who began his career at Marshall.",
+            "correct": true,
+            "explanation": "NASA Administrator Jared Isaacman named veteran engineer Stephen Cash as director of Marshall Space Flight Center, bringing over 40 years of experience to the post where he initially started his career.",
+            "source": {
+              "label": "NASA Names Stephen Cash Marshall Space Flight Center Director",
+              "url": "https://www.nasa.gov/news-release/nasa-names-stephen-cash-marshall-space-flight-center-director/"
+            }
+          },
+          {
+            "text": "Allison Mjoen, following her leadership in ground propellant management during the Artemis launch operations.",
+            "correct": false,
+            "explanation": "This is incorrect because Allison Mjoen is an operations manager with the Exploration Ground Systems Program, whereas Stephen Cash was appointed as Marshall center director."
+          },
+          {
+            "text": "Jared Isaacman, who stepped down as NASA Administrator to manage center operations directly in Huntsville.",
+            "correct": false,
+            "explanation": "This is incorrect because Jared Isaacman is the NASA Administrator who appointed Stephen Cash to lead the center."
+          },
+          {
+            "text": "A U.S. Navy officer who oversaw recovery operations following the Artemis II splashdown.",
+            "correct": false,
+            "explanation": "This is incorrect because Stephen Cash is a long-time NASA engineer and executive, not a Navy recovery officer."
+          }
+        ]
+      }
+    ],
+    "transcriptUrl": "https://jfunk42.com/podcasts/science-brief/transcripts/2026-10-19-09.html"
+  },
+  {
     "title": "Unlocking the Mysteries of Mars' Moons with MMX",
     "publishedAt": "2026-10-18",
     "description": "\"Japan's JAXA and NASA are partnering on the MMX mission, the first planned round-trip journey to the Martian region, to collect samples from Mars' moons and explore their origins.\"",
