@@ -1,5 +1,106 @@
 [
   {
+    "title": "Next-Generation Power and Mobility Systems for Moon and Mars Exploration",
+    "publishedAt": "2026-10-21",
+    "description": "NASA is advancing deep space exploration through nuclear electric propulsion progress, experimental rotorcraft blade designs for expanded Mars flights, and multipurpose lunar rovers for mapping and resource prospecting.",
+    "tags": [
+      "Deep Space Exploration",
+      "Nuclear Electric Propulsion",
+      "Mars Rotorcraft",
+      "Lunar Rovers"
+    ],
+    "questions": [
+      {
+        "question": "What is the primary objective of NASA's Space Reactor-1 (SR-1) Freedom mission?",
+        "choices": [
+          {
+            "text": "To serve as a high-speed chemical propulsion stage for launching satellites in low-Earth orbit.",
+            "correct": false,
+            "explanation": "SR-1 Freedom uses nuclear fission to demonstrate nuclear electric propulsion outside Earth's orbit, not chemical propulsion in low-Earth orbit."
+          },
+          {
+            "text": "To demonstrate nuclear electric propulsion in deep space using a nuclear fission power module.",
+            "correct": true,
+            "explanation": "SR-1 Freedom is designed to demonstrate nuclear electric propulsion outside Earth's orbit by tapping into nuclear fission to generate electrical power for continuous thrust.",
+            "source": {
+              "label": "NASA\u2019s SR-1 Freedom Advances with Progress on Nuclear Power Module",
+              "url": "https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module/"
+            }
+          },
+          {
+            "text": "To generate solar-powered electricity for permanent human bases on the lunar surface.",
+            "correct": false,
+            "explanation": "SR-1 Freedom focuses on nuclear fission power for deep-space transport rather than solar power generation for lunar bases."
+          },
+          {
+            "text": "To extract atmospheric gases from Mars and convert them directly into spacecraft propellant.",
+            "correct": false,
+            "explanation": "SR-1 Freedom is a deep-space propulsion technology demonstration, not a atmospheric gas extraction mission on Mars."
+          }
+        ]
+      },
+      {
+        "question": "How are NASA researchers developing next-generation experimental rotorcraft blades for future Mars missions?",
+        "choices": [
+          {
+            "text": "By conducting prototype flight tests directly in Mars' atmosphere using active operational rovers.",
+            "correct": false,
+            "explanation": "The current development effort relies on ground-based research and testing, not live operational flight tests on Mars."
+          },
+          {
+            "text": "By deploying autonomous high-altitude gliders into the atmosphere of Venus to collect wind data.",
+            "correct": false,
+            "explanation": "The experimental blade designs are engineered specifically for Mars conditions using computer models and wind tunnels on Earth, not Venus gliders."
+          },
+          {
+            "text": "By combining high-fidelity computer simulations with physical wind tunnel testing.",
+            "correct": true,
+            "explanation": "Engineers iterate blade shapes using high-fidelity computer simulations and validate airflow behaviors, lift, and structural dynamics in subsonic wind tunnels.",
+            "source": {
+              "label": "NASA Experimental Mars Helicopter Blade Designs Target Longer Flights",
+              "url": "https://www.nasa.gov/science-research/aeronautics-research/nasa-experimental-mars-helicopter-blade-designs-target-longer-flights/"
+            }
+          },
+          {
+            "text": "By modifying standard commercial Earth helicopter blades without altering their structural geometries.",
+            "correct": false,
+            "explanation": "Researchers are fundamentally reimagining blade geometry and structural dynamics to handle Mars' thin atmosphere, rather than using unmodified Earth helicopter blades."
+          }
+        ]
+      },
+      {
+        "question": "Which operational tasks are designated for initial crewed and robotic rovers supporting NASA's Moon Base effort?",
+        "choices": [
+          {
+            "text": "Technology demonstrations, astronaut transport, terrain mapping, scientific investigations, and resource prospecting.",
+            "correct": true,
+            "explanation": "Initial lunar rovers serve as multipurpose vehicles designed to carry out technology demonstrations, transport astronauts, map terrain, conduct scientific studies, and perform resource prospecting.",
+            "source": {
+              "label": "NASA Provides Progress Update on Moon Base Rovers",
+              "url": "https://www.nasa.gov/missions/moon-base/nasa-provides-progress-update-on-moon-base-rovers/"
+            }
+          },
+          {
+            "text": "Operating full-scale automated factories that refine regolith into heavy building supplies.",
+            "correct": false,
+            "explanation": "Early rovers gather preliminary mapping and resource data, but they are not full-scale industrial refining plants."
+          },
+          {
+            "text": "Drilling deep subterranean tunnels to install long-distance power grids across the lunar surface.",
+            "correct": false,
+            "explanation": "Early lunar rovers are surface mobility vehicles for scouting, mapping, and science, not heavy tunneling machinery."
+          },
+          {
+            "text": "Transporting heavy cargo payloads exclusively between Earth orbit and the lunar surface.",
+            "correct": false,
+            "explanation": "The rovers operate directly on the lunar surface to support exploration and mapping, rather than serving as Earth-to-Moon orbital transports."
+          }
+        ]
+      }
+    ],
+    "transcriptUrl": "https://jfunk42.com/podcasts/science-brief/transcripts/2026-10-21-13.html"
+  },
+  {
     "title": "Artemis Mission Architecture: Heat Shield Validation and Launch Infrastructure",
     "publishedAt": "2026-10-19",
     "description": "NASA's post-flight thermal protection analysis confirms Orion's heat shield effectively safeguarded crew and systems after the April 10, 2026 Artemis II splashdown, supported by ground propellant management and center leadership updates.",

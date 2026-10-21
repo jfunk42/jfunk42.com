@@ -10,7 +10,7 @@
     <description>Short, source-backed briefings on new discoveries in science, space, health, and technology.</description>
     <language>en-us</language>
     <copyright>Copyright 2026 James Funk</copyright>
-    <lastBuildDate>Mon, 19 Oct 2026 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 13:00:00 +0000</lastBuildDate>
     <managingEditor>james.c.funk@gmail.com (James Funk)</managingEditor>
     <webMaster>james.c.funk@gmail.com (James Funk)</webMaster>
     <itunes:title>jFunk42 Science Brief</itunes:title>
@@ -31,6 +31,21 @@
       <title>jFunk42 Science Brief</title>
       <link>https://jfunk42.com/podcasts/science-brief/</link>
     </image>
+
+    <item>
+      <title>Next-Generation Power and Mobility Systems for Moon and Mars Exploration</title>
+      <description><![CDATA[NASA is advancing deep space exploration through nuclear electric propulsion progress, experimental rotorcraft blade designs for expanded Mars flights, and multipurpose lunar rovers for mapping and resource prospecting.]]></description>
+      <content:encoded><![CDATA[<p>NASA is advancing deep space exploration through nuclear electric propulsion progress, experimental rotorcraft blade designs for expanded Mars flights, and multipurpose lunar rovers for mapping and resource prospecting.</p><p><a href="https://jfunk42.com/podcast-quizzes/#Next-Generation%20Power%20and%20Mobility%20Systems%20for%20Moon%20and%20Mars%20Exploration">Read the sources and take the episode quiz.</a></p><p><a href="https://jfunk42.com/podcasts/science-brief/transcripts/2026-10-21-13.html">Read the full transcript.</a></p>]]></content:encoded>
+      <link>https://jfunk42.com/podcast-quizzes/#Next-Generation%20Power%20and%20Mobility%20Systems%20for%20Moon%20and%20Mars%20Exploration</link>
+      <guid isPermaLink="false">jfunk42-science-brief-2026-10-21-13</guid>
+      <pubDate>Wed, 21 Oct 2026 13:00:00 +0000</pubDate>
+      <enclosure url="https://podcast.jfunk42.com/jfunk42-science-brief/episodes/2026-10-21-13.mp3" length="16840797" type="audio/mpeg"/>
+      <itunes:title>Next-Generation Power and Mobility Systems for Moon and Mars Exploration</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:duration>28:08</itunes:duration>
+      <itunes:image href="https://podcast.jfunk42.com/jfunk42-science-brief/artwork/2026-10-21-13-cover.png"/>
+    </item>
 
     <item>
       <title>Artemis Mission Architecture: Heat Shield Validation and Launch Infrastructure</title>
