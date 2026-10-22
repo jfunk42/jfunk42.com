@@ -10,7 +10,7 @@
     <description>Short, source-backed briefings on new discoveries in science, space, health, and technology.</description>
     <language>en-us</language>
     <copyright>Copyright 2026 James Funk</copyright>
-    <lastBuildDate>Wed, 21 Oct 2026 13:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 14:00:00 +0000</lastBuildDate>
     <managingEditor>james.c.funk@gmail.com (James Funk)</managingEditor>
     <webMaster>james.c.funk@gmail.com (James Funk)</webMaster>
     <itunes:title>jFunk42 Science Brief</itunes:title>
@@ -31,6 +31,21 @@
       <title>jFunk42 Science Brief</title>
       <link>https://jfunk42.com/podcasts/science-brief/</link>
     </image>
+
+    <item>
+      <title>Astronomical Illusions: Unraveling Mega-Earths and Solar Plasma Curtains</title>
+      <description><![CDATA[This episode examines how stellar activity and complex plasma structures can create observational illusions, reinterpreting "mega-Earth" exoplanets and the apparent rotation of solar spicules.]]></description>
+      <content:encoded><![CDATA[<p>This episode examines how stellar activity and complex plasma structures can create observational illusions, reinterpreting &quot;mega-Earth&quot; exoplanets and the apparent rotation of solar spicules.</p><p><a href="https://jfunk42.com/podcast-quizzes/#Astronomical%20Illusions%3A%20Unraveling%20Mega-Earths%20and%20Solar%20Plasma%20Curtains">Read the sources and take the episode quiz.</a></p><p><a href="https://jfunk42.com/podcasts/science-brief/transcripts/2026-10-22-14.html">Read the full transcript.</a></p>]]></content:encoded>
+      <link>https://jfunk42.com/podcast-quizzes/#Astronomical%20Illusions%3A%20Unraveling%20Mega-Earths%20and%20Solar%20Plasma%20Curtains</link>
+      <guid isPermaLink="false">jfunk42-science-brief-2026-10-22-14</guid>
+      <pubDate>Thu, 22 Oct 2026 14:00:00 +0000</pubDate>
+      <enclosure url="https://podcast.jfunk42.com/jfunk42-science-brief/episodes/2026-10-22-14.mp3" length="13714173" type="audio/mpeg"/>
+      <itunes:title>Astronomical Illusions: Unraveling Mega-Earths and Solar Plasma Curtains</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:duration>23:04</itunes:duration>
+      <itunes:image href="https://podcast.jfunk42.com/jfunk42-science-brief/artwork/2026-10-22-14-cover.png"/>
+    </item>
 
     <item>
       <title>Next-Generation Power and Mobility Systems for Moon and Mars Exploration</title>

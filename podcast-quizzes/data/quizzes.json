@@ -1,5 +1,106 @@
 [
   {
+    "title": "Astronomical Illusions: Unraveling Mega-Earths and Solar Plasma Curtains",
+    "publishedAt": "2026-10-22",
+    "description": "This episode examines how stellar activity and complex plasma structures can create observational illusions, reinterpreting \"mega-Earth\" exoplanets and the apparent rotation of solar spicules.",
+    "tags": [
+      "astrophysics",
+      "exoplanets",
+      "solar physics",
+      "stellar activity"
+    ],
+    "questions": [
+      {
+        "question": "According to recent research discussed in the podcast, how can host star activity create the illusion of an oversized 'mega-Earth'?",
+        "choices": [
+          {
+            "text": "Starspots, faculae, and convective shifts distort spectral lines on timescales that mimic planetary orbits, inflating calculated mass estimates.",
+            "correct": true,
+            "explanation": "Magnetic regions and surface atmospheric activity distort the spectral lines used in Doppler velocity calculations, causing software to interpret intrinsic stellar noise as a stronger gravitational pull from an abnormally heavy planet.",
+            "source": {
+              "label": "Are 'mega-Earths' real? Stellar activity may explain these oversized rocky worlds",
+              "url": "https://phys.org/news/2026-10-mega-earths-real-stellar-oversized.html"
+            }
+          },
+          {
+            "text": "Solar flares from host stars physically push exoplanets closer to their stars, artificially increasing their measured orbital velocities.",
+            "correct": false,
+            "explanation": "Stellar activity distorts the star's spectral lines used to calculate radial velocity, rather than physically pushing exoplanets into tighter orbits."
+          },
+          {
+            "text": "Host star magnetic fields block exoplanetary transit light, causing astronomers to overestimate the physical volume and density of the world.",
+            "correct": false,
+            "explanation": "The issue involves radial velocity spectral distortions mimicking planetary mass, not transit photometry or light blockage."
+          },
+          {
+            "text": "Active host stars strip away gas from the exoplanet, leaving a dense metallic core that refracts light abnormally.",
+            "correct": false,
+            "explanation": "The research explains that stellar activity produces spectral signatures on the star itself that mimic planetary gravity, rather than the star stripping planetary atmospheres."
+          }
+        ]
+      },
+      {
+        "question": "What do new 3D computer simulations reveal about the true structure and apparent spinning of solar spicules?",
+        "choices": [
+          {
+            "text": "Spicules are perfectly uniform gas cylinders that rapidly rotate along their central axis to twist coronal magnetic fields.",
+            "correct": false,
+            "explanation": "The simulation disproves the spinning cylinder model, revealing spicules are actually warped, curtain-like plasma sheets."
+          },
+          {
+            "text": "Spicules are warped plasma sheets resembling pleated drapery, whose dynamic folding creates line-of-sight velocity shifts that mimic rotation.",
+            "correct": true,
+            "explanation": "Simulations show spicules take the form of folded, curtain-like plasma sheets; looking edge-on through overlapping folds with opposing movements produces an optical illusion of axial rotation.",
+            "source": {
+              "label": "Curtain-like plasma structures explain solar jets' apparent spinning in simulations",
+              "url": "https://phys.org/news/2026-10-curtain-plasma-solar-jets-apparent.html"
+            }
+          },
+          {
+            "text": "Spicules are solid carbon filaments erupted from the photosphere that wobble like spinning tops as they shoot into space.",
+            "correct": false,
+            "explanation": "Spicules are dynamic ionized plasma structures in the solar atmosphere, not solid carbon filaments."
+          },
+          {
+            "text": "Spicules are expanding spherical plasma bubbles whose outer shells rotate rapidly as heat escapes into the corona.",
+            "correct": false,
+            "explanation": "Spicules are six to eight megameter long sheet-like plasma structures resembling pleated drapery, not expanding spherical bubbles."
+          }
+        ]
+      },
+      {
+        "question": "Why did reported detections of rocky 'mega-Earths' pose a major problem for standard planetary formation models?",
+        "choices": [
+          {
+            "text": "Formation models state that solid cores larger than ten Earth masses cannot exist anywhere in the universe.",
+            "correct": false,
+            "explanation": "Models allow solid material to accumulate, but predict that cores exceeding ten Earth masses will accrete massive gas envelopes rather than remain bare rocky worlds."
+          },
+          {
+            "text": "Models predict that once a rocky core exceeds about ten Earth masses, its gravity triggers runaway gas accretion to form a gas giant.",
+            "correct": true,
+            "explanation": "Standard planetary accretion models indicate that a planet exceeding roughly ten Earth masses has sufficient gravitational pull to rapidly accumulate hydrogen and helium, transforming into a giant gas planet.",
+            "source": {
+              "label": "Are 'mega-Earths' real? Stellar activity may explain these oversized rocky worlds",
+              "url": "https://phys.org/news/2026-10-mega-earths-real-stellar-oversized.html"
+            }
+          },
+          {
+            "text": "Models indicate that planets heavier than ten Earth masses are instantly ejected from their solar systems by stellar winds.",
+            "correct": false,
+            "explanation": "The theoretical difficulty lies in explaining how a world could reach such extreme mass without growing a thick hydrogen/helium atmosphere, not stellar wind ejection."
+          },
+          {
+            "text": "Formation models show that high-mass rocky worlds collapse into black holes if they do not contain gas.",
+            "correct": false,
+            "explanation": "Standard models deal with planet core accretion and runaway gas accumulation, not gravitational collapse into black holes."
+          }
+        ]
+      }
+    ],
+    "transcriptUrl": "https://jfunk42.com/podcasts/science-brief/transcripts/2026-10-22-14.html"
+  },
+  {
     "title": "Next-Generation Power and Mobility Systems for Moon and Mars Exploration",
     "publishedAt": "2026-10-21",
     "description": "NASA is advancing deep space exploration through nuclear electric propulsion progress, experimental rotorcraft blade designs for expanded Mars flights, and multipurpose lunar rovers for mapping and resource prospecting.",
