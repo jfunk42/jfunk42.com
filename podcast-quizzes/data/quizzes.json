@@ -1,5 +1,106 @@
 [
   {
+    "title": "NASA's Artemis Strategy: Re-Architecting Moon Lander Testing and Propulsion",
+    "publishedAt": "2026-10-26",
+    "description": "NASA is restructuring its Artemis roadmap by integrating RS-25 engine hot-fire tests, low Earth orbit operational demonstrations in 2027, and streamlined commercial lander designs targeting 2028 surface missions.",
+    "tags": [
+      "Artemis Program",
+      "NASA",
+      "Space Exploration",
+      "RS-25 Engine"
+    ],
+    "questions": [
+      {
+        "question": "What is the primary mission objective and target orbit for the crewed Artemis III flight scheduled for 2027?",
+        "choices": [
+          {
+            "text": "It will send four astronauts to low Earth orbit aboard Orion to test future moon lander operations under spaceflight conditions.",
+            "correct": true,
+            "explanation": "Artemis III will carry NASA astronauts Randy Bresnik, Frank Rubio, Andre Douglas, and ESA astronaut Luca Parmitano into low Earth orbit to evaluate docking and lander operations before committing to lunar surface descent.",
+            "source": {
+              "label": "NASA\u2019s Artemis III Mission to Test Future Moon Lander Operations",
+              "url": "https://www.nasa.gov/missions/artemis/nasas-artemis-iii-mission-to-test-future-moon-lander-operations/"
+            }
+          },
+          {
+            "text": "It will land four astronauts on the lunar surface near the South Pole to collect surface samples.",
+            "correct": false,
+            "explanation": "Artemis III was shifted to a low Earth orbit operational demonstration mission in 2027 rather than attempting a direct crewed lunar surface landing."
+          },
+          {
+            "text": "It will conduct an uncrewed flyby of the Moon to evaluate dynamic pressure loads on the Space Launch System core stage.",
+            "correct": false,
+            "explanation": "Artemis III is a crewed mission carrying four astronauts to low Earth orbit, not an uncrewed lunar flyby."
+          },
+          {
+            "text": "It will place a permanent commercial space station module into orbit around the Moon to host human landing systems.",
+            "correct": false,
+            "explanation": "The mission objective of Artemis III is to test Orion and commercial lander operational interfaces in low Earth orbit, not to deploy a lunar space station."
+          }
+        ]
+      },
+      {
+        "question": "How are NASA and commercial human landing system providers SpaceX and Blue Origin updating their plans for surface missions targeted for 2028?",
+        "choices": [
+          {
+            "text": "They are merging into a single joint venture that will utilize identical lander hardware and propulsion mechanisms.",
+            "correct": false,
+            "explanation": "NASA is maintaining two distinct commercial lander architectures with SpaceX and Blue Origin to provide programmatic redundancy."
+          },
+          {
+            "text": "They are streamlining lander designs and refining Concepts of Operations (ConOps) to mature their platforms.",
+            "correct": true,
+            "explanation": "NASA, SpaceX, and Blue Origin are refining their ConOps and streamlining lander designs to accelerate hardware development for lunar surface missions targeted for 2028.",
+            "source": {
+              "label": "NASA, Partners Accelerate Lander Development for 2028 Moon Missions",
+              "url": "https://www.nasa.gov/missions/artemis/nasa-partners-accelerate-lander-development-for-2028-moon-missions/"
+            }
+          },
+          {
+            "text": "They are cancelling all human surface landing plans in favor of fully autonomous robotic rover deployments.",
+            "correct": false,
+            "explanation": "The effort to streamline commercial lander designs is specifically focused on maturing human landing systems for crewed surface missions in 2028."
+          },
+          {
+            "text": "They are postponing all lander testing until 2035 to wait for nuclear thermal propulsion systems to complete development.",
+            "correct": false,
+            "explanation": "NASA and its partners are actively accelerating lander development targeting surface missions for 2028 following the 2027 orbital test mission."
+          }
+        ]
+      },
+      {
+        "question": "What key parameters were demonstrated during the hot-fire test of RS-25 engine number 10001 at NASA's Stennis Space Center on October 21, 2026?",
+        "choices": [
+          {
+            "text": "The engine was fired four consecutive times for 60 seconds each at a 90% power setting.",
+            "correct": false,
+            "explanation": "The hot-fire test was a single continuous full-duration run lasting 500 seconds, not a series of short bursts."
+          },
+          {
+            "text": "The engine operated continuously for 200 seconds while restricted to sea-level emergency idle power.",
+            "correct": false,
+            "explanation": "The test ran for 500 seconds at a high-performance 111% power level rather than 200 seconds at idle."
+          },
+          {
+            "text": "The engine completed a full-duration hot-fire lasting 500 seconds at a 111% power level.",
+            "correct": true,
+            "explanation": "Engine number 10001 completed a continuous 500-second test\u2014matching the core stage burn duration needed during launch\u2014while operating at 111% power to demonstrate operational margin.",
+            "source": {
+              "label": "RS-25 Engine Tests at NASA Stennis",
+              "url": "https://www.nasa.gov/image-article/rs-25-engine-tests-at-nasa-stennis/"
+            }
+          },
+          {
+            "text": "The engine ran for 1,000 seconds on liquid methane propellant to simulate deep-space trans-lunar injection.",
+            "correct": false,
+            "explanation": "The test duration was 500 seconds, matching the SLS core stage launch burn time, and the RS-25 engine uses standard liquid hydrogen and liquid oxygen propulsion."
+          }
+        ]
+      }
+    ],
+    "transcriptUrl": "https://jfunk42.com/podcasts/science-brief/transcripts/2026-10-26-09.html"
+  },
+  {
     "title": "Analyzing Global Climate Extremes: Satellite Altimetry, Regional Drought Fires, Heat Mortality, and Storm Impacts",
     "publishedAt": "2026-10-23",
     "description": "This episode examines multi-decadal satellite altimetry tracking of El Ni\u00f1o, severe drought driving high fire emissions in New Guinea, European heatwave mortality attributions, and typhoon disruptions in Taiwan.",
