@@ -1,5 +1,106 @@
 [
   {
+    "title": "Preparing for the Red Planet: Mars Dust Hazards and Mission Simulations",
+    "publishedAt": "2026-10-28",
+    "description": "Long-term observations by NASA's perseverance rover reveal fine Martian dust risks to future human crews alongside geological evidence of Jezero Crater's ancient water channels.",
+    "tags": [
+      "Mars Exploration",
+      "Space Safety",
+      "Planetary Science",
+      "NASA"
+    ],
+    "questions": [
+      {
+        "question": "According to data collected over 1,645 sols by NASA's Perseverance rover, why does atmospheric dust clinging to suit materials pose a key physiological risk to future astronaut crews?",
+        "choices": [
+          {
+            "text": "The clinging dust consists of fine and ultrafine particles small enough to penetrate human lungs and enter the bloodstream.",
+            "correct": true,
+            "explanation": "Analysis of spacesuit material samples exposed on Perseverance over 1,645 sols showed that adhering dust particles are fine and ultrafine, making them small enough to enter human respiratory tracts and bloodstream if brought into habitat quarters.",
+            "source": {
+              "label": "NASA\u2019s Perseverance Offers Clues to Protect Crews From Mars Dust",
+              "url": "https://www.nasa.gov/missions/mars-2020-perseverance/nasas-perseverance-offers-clues-to-protect-crews-from-mars-dust/"
+            }
+          },
+          {
+            "text": "The dust particles trigger instant chemical corrosion that completely dissolves metal suit joints within hours.",
+            "correct": false,
+            "explanation": "The primary physiological hazard identified in the multi-sol study is micro-particle inhalation and entry into the human bloodstream, not instant chemical dissolution of metal hardware."
+          },
+          {
+            "text": "The dust consists exclusively of heavy, coarse grains that block outer viewports but shed easily without clinging to fabric weaves.",
+            "correct": false,
+            "explanation": "The study demonstrated that fine and ultrafine dust persistent clings to spacesuit materials rather than easily shedding off as coarse grains."
+          },
+          {
+            "text": "The dust particles emit high-level radioactive fallout that instantly degrades airlock scrubbers upon contact.",
+            "correct": false,
+            "explanation": "The concern is driven by microscopic particle dimensions penetrating lung tissue and systemic circulation, not radioactive thermal breakdown of filtration scrubbers."
+          }
+        ]
+      },
+      {
+        "question": "What did Perseverance capture on Sol 1,155 using 217 individual images from its Mastcam-Z instrument at Neretva Vallis?",
+        "choices": [
+          {
+            "text": "A 360-degree panorama of a wind-swept, dusty channel that anciently carried fresh water into Jezero Crater.",
+            "correct": true,
+            "explanation": "On Sol 1,155 (May 20, 2024), Perseverance acquired 217 Mastcam-Z images to construct a 360-degree panorama of Neretva Vallis, an ancient river channel that deposited fresh water into Jezero Crater billions of years ago.",
+            "source": {
+              "label": "NASA\u2019s Perseverance Views Dust at Neretva Vallis",
+              "url": "https://science.nasa.gov/photojournal/nasas-perseverance-views-dust-at-neretva-vallis/"
+            }
+          },
+          {
+            "text": "A live video recording of liquid water actively flowing through the channel into Jezero Crater.",
+            "correct": false,
+            "explanation": "Neretva Vallis is currently a dry, wind-swept environment; liquid water actively flowed through it billions of years ago, not today."
+          },
+          {
+            "text": "A single wide-angle photograph capturing a global dust storm across the entire southern hemisphere of Mars.",
+            "correct": false,
+            "explanation": "The imagery was a localized 360-degree panorama stitched from 217 individual Mastcam-Z frames, not a single global orbital photo."
+          },
+          {
+            "text": "An orbital infrared map depicting subterranean lava tubes underneath Jezero Crater's surface.",
+            "correct": false,
+            "explanation": "Mastcam-Z is a surface-based rover instrument that captured ground-level terrain and sediment features at Neretva Vallis."
+          }
+        ]
+      },
+      {
+        "question": "How long did four volunteer crew members live in total isolation during NASA's simulated Mars mission at Johnson Space Center in Houston?",
+        "choices": [
+          {
+            "text": "378 days",
+            "correct": true,
+            "explanation": "The four volunteer crew members lived and worked inside the ground-based habitat at NASA's Johnson Space Center for 378 days of complete isolation to support human risk research.",
+            "source": {
+              "label": "NASA Invites Media to Crew Completion of Yearlong Mars Simulation",
+              "url": "https://www.nasa.gov/news-release/nasa-invites-media-to-crew-completion-of-yearlong-mars-simulation/"
+            }
+          },
+          {
+            "text": "1,645 days",
+            "correct": false,
+            "explanation": "1,645 refers to the number of Martian sols over which Perseverance collected spacesuit dust accumulation data on Mars, not the ground simulation duration."
+          },
+          {
+            "text": "1,155 days",
+            "correct": false,
+            "explanation": "Sol 1,155 was the specific Martian day on which Perseverance imaged Neretva Vallis, not the length of the human simulation."
+          },
+          {
+            "text": "217 days",
+            "correct": false,
+            "explanation": "217 was the number of individual Mastcam-Z images used to stitch together the Neretva Vallis panorama on Sol 1,155."
+          }
+        ]
+      }
+    ],
+    "transcriptUrl": "https://jfunk42.com/podcasts/science-brief/transcripts/2026-10-28-09.html"
+  },
+  {
     "title": "NASA's Artemis Strategy: Re-Architecting Moon Lander Testing and Propulsion",
     "publishedAt": "2026-10-26",
     "description": "NASA is restructuring its Artemis roadmap by integrating RS-25 engine hot-fire tests, low Earth orbit operational demonstrations in 2027, and streamlined commercial lander designs targeting 2028 surface missions.",
