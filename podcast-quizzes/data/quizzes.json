@@ -1,5 +1,106 @@
 [
   {
+    "title": "Unlocking Mars's Ancient History Through Meteorite Teghaza 001",
+    "publishedAt": "2026-10-30",
+    "description": "NASA-funded scientists analyzed Teghaza 001, a 4.1-billion-year-old rose-colored Martian meteorite found in the Sahara Desert, using microscopic slice mapping and global chemistry matching to identify thirteen potential candidate origin sites in Mars's southern highlands.",
+    "tags": [
+      "Mars",
+      "Meteorites",
+      "Planetary Science",
+      "Teghaza 001"
+    ],
+    "questions": [
+      {
+        "question": "What is Teghaza 001, and how old did laboratory age-dating determine it to be?",
+        "choices": [
+          {
+            "text": "A rose-colored Martian meteorite discovered in the Sahara Desert that formed more than 4.1 billion years ago.",
+            "correct": true,
+            "explanation": "Age-dating of minerals embedded within Teghaza 001 revealed it formed over 4.1 billion years ago, making this nearly two-pound meteorite from the Sahara Desert one of the oldest Martian meteorites ever found on Earth.",
+            "source": {
+              "label": "NASA-funded Study Details One of Oldest Mars Meteorites Ever Found",
+              "url": "https://www.nasa.gov/solar-system/planets/mars/nasa-funded-study-details-one-of-oldest-mars-meteorites-ever-found/"
+            }
+          },
+          {
+            "text": "A lunar rock retrieved from Antarctica that crystallized approximately 2.5 billion years ago.",
+            "correct": false,
+            "explanation": "Teghaza 001 was found in the Sahara Desert (not Antarctica), originated from Mars (not the Moon), and was dated to more than 4.1 billion years old."
+          },
+          {
+            "text": "An asteroid sample collected during a space probe mission that formed 1.0 billion years ago.",
+            "correct": false,
+            "explanation": "Teghaza 001 is a Martian meteorite recovered in the Sahara Desert in 2022, not an asteroid sample returned by a spacecraft."
+          },
+          {
+            "text": "A terrestrial mantle stone from Earth's deep crust that formed 3.5 billion years ago.",
+            "correct": false,
+            "explanation": "Teghaza 001 is an extraterrestrial rock from Mars, confirmed through mineralogical and isotopic testing to be over 4.1 billion years old."
+          }
+        ]
+      },
+      {
+        "question": "How did scientists use reflected light microscopy when analyzing polished slices of Teghaza 001?",
+        "choices": [
+          {
+            "text": "As an optical roadmap to identify mineral boundaries and target specific locations for detailed instrument testing.",
+            "correct": true,
+            "explanation": "Reflected light images serve as an optical roadmap by highlighting structural and mineral features across polished slices, guiding targeted chemical and isotopic analyses on exact spots.",
+            "source": {
+              "label": "Slice of Martian Meteorite Teghaza 001",
+              "url": "https://science.nasa.gov/photojournal/slice-of-martian-meteorite-teghaza-001/"
+            }
+          },
+          {
+            "text": "As a direct method to measure the isotopic decay rates and determine absolute mineral ages.",
+            "correct": false,
+            "explanation": "Reflected light microscopy provides visual and structural mapping; isotopic age-dating requires separate specialized instruments targeting the mapped locations."
+          },
+          {
+            "text": "As a tool to simulate the atmospheric entry heating experienced by the meteorite during landing.",
+            "correct": false,
+            "explanation": "Reflected light mapping inspects internal physical textures of polished rock slices; it is not used to simulate atmospheric entry heating."
+          },
+          {
+            "text": "As a non-destructive technique to measure global surface compositions on Mars.",
+            "correct": false,
+            "explanation": "Reflected light microscopy is performed directly on thin slices of physical meteorite samples in the laboratory, not on global surface maps of Mars."
+          }
+        ]
+      },
+      {
+        "question": "Where on Mars did global mapping identify potential origin sites for Teghaza 001, and what limitation did researchers emphasize?",
+        "choices": [
+          {
+            "text": "Thirteen candidate sites in the southern highlands, while acknowledging scientists can never know the exact crater for sure.",
+            "correct": true,
+            "explanation": "Global chemistry matching identified 13 potential sites in Mars's southern highlands, but because broad regions share ancient compositions, scientists cannot definitively confirm a single launch crater.",
+            "source": {
+              "label": "Map Showing Potential Origins of Martian Meteorite Teghaza 001",
+              "url": "https://science.nasa.gov/photojournal/map-showing-potential-origins-of-martian-meteorite-teghaza-001/"
+            }
+          },
+          {
+            "text": "Three candidate sites in the northern lowlands, with definitive proof of the exact crater of origin.",
+            "correct": false,
+            "explanation": "The study matched 13 sites (not 3) in the southern highlands (not northern lowlands), and explicitly noted that the exact origin crater cannot be known for sure."
+          },
+          {
+            "text": "A single crater near Olympus Mons, which was verified as the sole launch location.",
+            "correct": false,
+            "explanation": "Researchers identified 13 candidate sites across the southern highlands rather than a single verified crater near Olympus Mons."
+          },
+          {
+            "text": "Seven equatorial candidate locations, which were ruled out due to incompatible mineral ages.",
+            "correct": false,
+            "explanation": "The study found 13 candidate locations that matched Teghaza 001's chemistry and mineralogy in Mars's southern highlands, not 7 ruled-out equatorial locations."
+          }
+        ]
+      }
+    ],
+    "transcriptUrl": "https://jfunk42.com/podcasts/science-brief/transcripts/2026-10-30-09.html"
+  },
+  {
     "title": "Preparing for the Red Planet: Mars Dust Hazards and Mission Simulations",
     "publishedAt": "2026-10-28",
     "description": "Long-term observations by NASA's perseverance rover reveal fine Martian dust risks to future human crews alongside geological evidence of Jezero Crater's ancient water channels.",
