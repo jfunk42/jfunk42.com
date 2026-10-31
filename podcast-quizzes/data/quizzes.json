@@ -1,5 +1,106 @@
 [
   {
+    "title": "Linking Telescopes, Servicing Hubble, and Hunting Ghost Particles",
+    "publishedAt": "2026-10-31",
+    "description": "Astronomers are advancing modern observational capabilities through ground-based photonic chips that link multiple telescopes, commercial in-space servicing concepts for space-based observatories like Hubble, and radio arrays targeting cosmic neutrinos.",
+    "tags": [
+      "astronomy",
+      "integrated optics",
+      "space servicing",
+      "neutrinos"
+    ],
+    "questions": [
+      {
+        "question": "How does the micro-scale photonic chip developed at Heriot-Watt University enable two separate telescopes to operate as a single instrument?",
+        "choices": [
+          {
+            "text": "It routes light signals from both telescopes through microscopic channels in a glass chip to combine the light beams and preserve phase coherence.",
+            "correct": true,
+            "explanation": "By integrating optical pathways into a glass chip, light captured by two separate telescopes is directed into micro-scale waveguides that combine the beams, allowing the array to act as a single synthetic aperture telescope.",
+            "source": {
+              "label": "Tiny photonic chip links telescopes together to view the universe in 'astonishing' detail",
+              "url": "https://phys.org/news/2026-10-tiny-photonic-chip-links-telescopes.html"
+            }
+          },
+          {
+            "text": "It replaces conventional telescope mirrors with radio receivers that bend incoming optical light.",
+            "correct": false,
+            "explanation": "The Heriot-Watt chip is an integrated optical component designed to combine light beams from separate telescopes, not a radio receiver designed to replace physical mirrors."
+          },
+          {
+            "text": "It uses subterranean water tanks to amplify light signals before directing them into glass micro-channels.",
+            "correct": false,
+            "explanation": "Subterranean water tanks are traditional detector setups for particle astrophysics (such as neutrinos), not part of the ground-based photonic chip interferometry system."
+          },
+          {
+            "text": "It completely eliminates photon absorption and scattering losses within its glass micro-waveguides.",
+            "correct": false,
+            "explanation": "Photon loss due to absorption and scattering inside glass waveguides is an unavoidable physical reality, especially challenging for faint deep-space targets."
+          }
+        ]
+      },
+      {
+        "question": "What is the primary objective of the Request for Information (RFI) issued by NASA regarding the Hubble Space Telescope?",
+        "choices": [
+          {
+            "text": "To contract a funded astronaut crew mission to replace Hubble's solar arrays.",
+            "correct": false,
+            "explanation": "The RFI is an exploratory market survey to gauge commercial industry capabilities, not a funded program or a crewed Space Shuttle mission."
+          },
+          {
+            "text": "To survey commercial industry capabilities for in-space servicing, maintenance, and life-extension options for Hubble.",
+            "correct": true,
+            "explanation": "NASA issued the RFI to evaluate whether private commercial companies have mature technologies capable of performing servicing or operational life-extension tasks for legacy orbital observatories.",
+            "source": {
+              "label": "NASA Explores Potential Commercial Servicing for Hubble Telescope",
+              "url": "https://science.nasa.gov/missions/hubble/nasa-explores-potential-commercial-servicing-for-hubble-telescope/"
+            }
+          },
+          {
+            "text": "To order the immediate decommissioning and atmospheric re-entry of the telescope.",
+            "correct": false,
+            "explanation": "The RFI focuses on exploring potential servicing and operational life-extension capabilities, not ordering immediate decommissioning."
+          },
+          {
+            "text": "To guarantee a commercial contract for manufacturing a duplicate ground-based backup of Hubble.",
+            "correct": false,
+            "explanation": "An RFI is an exploratory survey to gather market data on in-space servicing concepts, not a guaranteed contract to build a ground-based backup instrument."
+          }
+        ]
+      },
+      {
+        "question": "How can radio telescopes assist astrophysicists in determining the origin of cosmic neutrinos?",
+        "choices": [
+          {
+            "text": "By detecting short radio bursts produced when ultra-high-energy neutrinos interact with dense media and trigger charged particle cascades.",
+            "correct": true,
+            "explanation": "When a high-energy neutrino collides with an atomic nucleus in a dense natural medium (like ice or lunar soil), the resulting cascade of charged particles generates a brief radio emission that radio telescopes can detect.",
+            "source": {
+              "label": "Figuring out where cosmic neutrinos come from is tricky\u2014radio telescopes could help find 'ghost particles' origin",
+              "url": "https://phys.org/news/2026-10-figuring-cosmic-neutrinos-tricky-radio.html"
+            }
+          },
+          {
+            "text": "By capturing neutrinos directly as their charged paths bend in interstellar magnetic fields.",
+            "correct": false,
+            "explanation": "Neutrinos carry no electrical charge, so their trajectories are completely unbent by interstellar magnetic fields, and radio telescopes detect secondary radio pulses rather than catching the particles directly."
+          },
+          {
+            "text": "By observing the visible light generated when decaying bananas in space release neutrinos.",
+            "correct": false,
+            "explanation": "While everyday objects like bananas emit neutrinos on Earth through radioactive decay, radio observatories target radio bursts from high-energy cosmic events like supernovas rather than visible light from bananas."
+          },
+          {
+            "text": "By relying on the fact that cosmic rays never generate particle cascades that interfere with radio signals.",
+            "correct": false,
+            "explanation": "Cosmic rays also strike media and produce secondary particle cascades that mimic neutrino signals, creating a noise background that requires complex filtering."
+          }
+        ]
+      }
+    ],
+    "transcriptUrl": "https://jfunk42.com/podcasts/science-brief/transcripts/2026-10-31-09.html"
+  },
+  {
     "title": "Unlocking Mars's Ancient History Through Meteorite Teghaza 001",
     "publishedAt": "2026-10-30",
     "description": "NASA-funded scientists analyzed Teghaza 001, a 4.1-billion-year-old rose-colored Martian meteorite found in the Sahara Desert, using microscopic slice mapping and global chemistry matching to identify thirteen potential candidate origin sites in Mars's southern highlands.",

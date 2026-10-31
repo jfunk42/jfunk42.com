@@ -10,7 +10,7 @@
     <description>Short, source-backed briefings on new discoveries in science, space, health, and technology.</description>
     <language>en-us</language>
     <copyright>Copyright 2026 James Funk</copyright>
-    <lastBuildDate>Fri, 30 Oct 2026 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 09:00:00 +0000</lastBuildDate>
     <managingEditor>jfunk42app@gmail.com (James Funk)</managingEditor>
     <webMaster>jfunk42app@gmail.com (James Funk)</webMaster>
     <itunes:title>jFunk42 Science Brief</itunes:title>
@@ -31,6 +31,21 @@
       <title>jFunk42 Science Brief</title>
       <link>https://jfunk42.com/podcasts/science-brief/</link>
     </image>
+
+    <item>
+      <title>Linking Telescopes, Servicing Hubble, and Hunting Ghost Particles</title>
+      <description><![CDATA[Astronomers are advancing modern observational capabilities through ground-based photonic chips that link multiple telescopes, commercial in-space servicing concepts for space-based observatories like Hubble, and radio arrays targeting cosmic neutrinos.]]></description>
+      <content:encoded><![CDATA[<p>Astronomers are advancing modern observational capabilities through ground-based photonic chips that link multiple telescopes, commercial in-space servicing concepts for space-based observatories like Hubble, and radio arrays targeting cosmic neutrinos.</p><p><a href="https://jfunk42.com/podcast-quizzes/#Linking%20Telescopes%2C%20Servicing%20Hubble%2C%20and%20Hunting%20Ghost%20Particles">Read the sources and take the episode quiz.</a></p><p><a href="https://jfunk42.com/podcasts/science-brief/transcripts/2026-10-31-09.html">Read the full transcript.</a></p>]]></content:encoded>
+      <link>https://jfunk42.com/podcast-quizzes/#Linking%20Telescopes%2C%20Servicing%20Hubble%2C%20and%20Hunting%20Ghost%20Particles</link>
+      <guid isPermaLink="false">jfunk42-science-brief-2026-10-31-09</guid>
+      <pubDate>Sat, 31 Oct 2026 09:00:00 +0000</pubDate>
+      <enclosure url="https://podcast.jfunk42.com/jfunk42-science-brief/episodes/2026-10-31-09.mp3" length="11420973" type="audio/mpeg"/>
+      <itunes:title>Linking Telescopes, Servicing Hubble, and Hunting Ghost Particles</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:duration>19:12</itunes:duration>
+      <itunes:image href="https://podcast.jfunk42.com/jfunk42-science-brief/artwork/2026-10-31-09-cover.png"/>
+    </item>
 
     <item>
       <title>Unlocking Mars&#x27;s Ancient History Through Meteorite Teghaza 001</title>
