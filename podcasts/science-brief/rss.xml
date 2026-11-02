@@ -10,7 +10,7 @@
     <description>Short, source-backed briefings on new discoveries in science, space, health, and technology.</description>
     <language>en-us</language>
     <copyright>Copyright 2026 James Funk</copyright>
-    <lastBuildDate>Sat, 31 Oct 2026 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 09:00:00 +0000</lastBuildDate>
     <managingEditor>jfunk42app@gmail.com (James Funk)</managingEditor>
     <webMaster>jfunk42app@gmail.com (James Funk)</webMaster>
     <itunes:title>jFunk42 Science Brief</itunes:title>
@@ -31,6 +31,21 @@
       <title>jFunk42 Science Brief</title>
       <link>https://jfunk42.com/podcasts/science-brief/</link>
     </image>
+
+    <item>
+      <title>Deciphering Cosmic Frontiers: From Martian Dust to Interstellar Chemistry</title>
+      <description><![CDATA[This episode explores how scientists analyze physical spacesuit samples on Mars, heavy hydrogen in interstellar comet 3I/ATLAS, and deep-space trajectories from the Voyager mission to uncover the environmental conditions of planetary bodies and interstellar space.]]></description>
+      <content:encoded><![CDATA[<p>This episode explores how scientists analyze physical spacesuit samples on Mars, heavy hydrogen in interstellar comet 3I/ATLAS, and deep-space trajectories from the Voyager mission to uncover the environmental conditions of planetary bodies and interstellar space.</p><p><a href="https://jfunk42.com/podcast-quizzes/#Deciphering%20Cosmic%20Frontiers%3A%20From%20Martian%20Dust%20to%20Interstellar%20Chemistry">Read the sources and take the episode quiz.</a></p><p><a href="https://jfunk42.com/podcasts/science-brief/transcripts/2026-11-02-09.html">Read the full transcript.</a></p>]]></content:encoded>
+      <link>https://jfunk42.com/podcast-quizzes/#Deciphering%20Cosmic%20Frontiers%3A%20From%20Martian%20Dust%20to%20Interstellar%20Chemistry</link>
+      <guid isPermaLink="false">jfunk42-science-brief-2026-11-02-09</guid>
+      <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
+      <enclosure url="https://podcast.jfunk42.com/jfunk42-science-brief/episodes/2026-11-02-09.mp3" length="14118933" type="audio/mpeg"/>
+      <itunes:title>Deciphering Cosmic Frontiers: From Martian Dust to Interstellar Chemistry</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:duration>23:50</itunes:duration>
+      <itunes:image href="https://podcast.jfunk42.com/jfunk42-science-brief/artwork/2026-11-02-09-cover.png"/>
+    </item>
 
     <item>
       <title>Linking Telescopes, Servicing Hubble, and Hunting Ghost Particles</title>
