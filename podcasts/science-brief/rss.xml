@@ -10,7 +10,7 @@
     <description>Short, source-backed briefings on new discoveries in science, space, health, and technology.</description>
     <language>en-us</language>
     <copyright>Copyright 2026 James Funk</copyright>
-    <lastBuildDate>Mon, 02 Nov 2026 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 09:00:00 +0000</lastBuildDate>
     <managingEditor>jfunk42app@gmail.com (James Funk)</managingEditor>
     <webMaster>jfunk42app@gmail.com (James Funk)</webMaster>
     <itunes:title>jFunk42 Science Brief</itunes:title>
@@ -31,6 +31,21 @@
       <title>jFunk42 Science Brief</title>
       <link>https://jfunk42.com/podcasts/science-brief/</link>
     </image>
+
+    <item>
+      <title>NASA&#x27;s Next-Generation Flight Research, Satellite Relays, and Accelerated Artemis Moon Timelines</title>
+      <description><![CDATA[NASA has announced strategic updates across its aerospace operations, including the unveiling of the crewed X-70 Fractal experimental aircraft, commercial awards for Ka-band space relay concepts, and an accelerated schedule targeting an Artemis III test flight in 2027 and a human lunar surface return in 2028.]]></description>
+      <content:encoded><![CDATA[<p>NASA has announced strategic updates across its aerospace operations, including the unveiling of the crewed X-70 Fractal experimental aircraft, commercial awards for Ka-band space relay concepts, and an accelerated schedule targeting an Artemis III test flight in 2027 and a human lunar surface return in 2028.</p><p><a href="https://jfunk42.com/podcast-quizzes/#NASA%27s%20Next-Generation%20Flight%20Research%2C%20Satellite%20Relays%2C%20and%20Accelerated%20Artemis%20Moon%20Timelines">Read the sources and take the episode quiz.</a></p><p><a href="https://jfunk42.com/podcasts/science-brief/transcripts/2026-11-06-09.html">Read the full transcript.</a></p>]]></content:encoded>
+      <link>https://jfunk42.com/podcast-quizzes/#NASA%27s%20Next-Generation%20Flight%20Research%2C%20Satellite%20Relays%2C%20and%20Accelerated%20Artemis%20Moon%20Timelines</link>
+      <guid isPermaLink="false">jfunk42-science-brief-2026-11-06-09</guid>
+      <pubDate>Fri, 06 Nov 2026 09:00:00 +0000</pubDate>
+      <enclosure url="https://podcast.jfunk42.com/jfunk42-science-brief/episodes/2026-11-06-09.mp3" length="14350893" type="audio/mpeg"/>
+      <itunes:title>NASA&#x27;s Next-Generation Flight Research, Satellite Relays, and Accelerated Artemis Moon Timelines</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:duration>24:04</itunes:duration>
+      <itunes:image href="https://podcast.jfunk42.com/jfunk42-science-brief/artwork/2026-11-06-09-cover.png"/>
+    </item>
 
     <item>
       <title>Deciphering Cosmic Frontiers: From Martian Dust to Interstellar Chemistry</title>

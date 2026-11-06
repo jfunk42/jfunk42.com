@@ -1,5 +1,106 @@
 [
   {
+    "title": "NASA's Next-Generation Flight Research, Satellite Relays, and Accelerated Artemis Moon Timelines",
+    "publishedAt": "2026-11-06",
+    "description": "NASA has announced strategic updates across its aerospace operations, including the unveiling of the crewed X-70 Fractal experimental aircraft, commercial awards for Ka-band space relay concepts, and an accelerated schedule targeting an Artemis III test flight in 2027 and a human lunar surface return in 2028.",
+    "tags": [
+      "NASA",
+      "Aeronautics",
+      "Space Communications",
+      "Artemis Program"
+    ],
+    "questions": [
+      {
+        "question": "Where was NASA's crewed X-70 Fractal experimental aircraft unveiled, and what is its key technological feature?",
+        "choices": [
+          {
+            "text": "It was unveiled at the UP.Summit at Kennedy Space Center and features rapidly reconfigurable flight-control technology.",
+            "correct": true,
+            "explanation": "NASA unveiled the crewed X-70 Fractal at the UP.Summit held at Kennedy Space Center in Florida, highlighting its advanced, rapidly reconfigurable flight-control system designed to accelerate flight research.",
+            "source": {
+              "label": "NASA Announces X-70 Experimental Aircraft to Advance Flight Research",
+              "url": "https://www.nasa.gov/news-release/nasa-announces-x-70-experimental-aircraft-to-advance-flight-research/"
+            }
+          },
+          {
+            "text": "It was unveiled at Johnson Space Center as a prototype for operational commercial long-range passenger transit.",
+            "correct": false,
+            "explanation": "The X-70 Fractal was unveiled at the UP.Summit at Kennedy Space Center as an experimental research platform, not as a commercial passenger aircraft at Johnson Space Center."
+          },
+          {
+            "text": "It was unveiled at Edwards Air Force Base to evaluate uncrewed fully autonomous stealth reconnaissance maneuvers.",
+            "correct": false,
+            "explanation": "The X-70 Fractal is a crewed experimental platform unveiled at Kennedy Space Center, not an uncrewed stealth aircraft unveiled at Edwards Air Force Base."
+          },
+          {
+            "text": "It was unveiled at Wallops Flight Facility as a suborbital rocket plane for upper-atmosphere weather monitoring.",
+            "correct": false,
+            "explanation": "The X-70 Fractal was unveiled at the UP.Summit at Kennedy Space Center to test reconfigurable flight controls, not as a weather-monitoring suborbital rocket plane at Wallops."
+          }
+        ]
+      },
+      {
+        "question": "What primary requirement must commercial partners satisfy under NASA's Ka-band satellite relay awards?",
+        "choices": [
+          {
+            "text": "The concepts must ensure continuous relay service for existing missions without modifying their onboard hardware.",
+            "correct": true,
+            "explanation": "NASA required that the developed Ka-band relay capability concepts maintain service continuity for legacy spacecraft already in orbit without needing hardware modifications on those active spacecraft.",
+            "source": {
+              "label": "NASA Announces Ka-Band Satellite Relay Awards for Space Communications",
+              "url": "https://www.nasa.gov/news-release/nasa-announces-ka-band-satellite-relay-awards-for-space-communications/"
+            }
+          },
+          {
+            "text": "The concepts must require all legacy spacecraft to undergo physical robotic servicing to upgrade their transmitters.",
+            "correct": false,
+            "explanation": "The initiative specifically focuses on backward compatibility so that existing spacecraft do not require hardware upgrades or servicing."
+          },
+          {
+            "text": "The concepts must rely solely on ground antenna arrays and eliminate space-based relay satellites entirely.",
+            "correct": false,
+            "explanation": "NASA's award program explicitly addresses space relay capability concepts, requiring end-to-end solutions that combine both space relay hardware and ground infrastructure."
+          },
+          {
+            "text": "The concepts must immediately replace all NASA operational communications infrastructure within 30 days of selection.",
+            "correct": false,
+            "explanation": "The awards were granted to three companies to develop relay capability concepts as part of an architectural evaluation phase, rather than an immediate 30-day operational replacement."
+          }
+        ]
+      },
+      {
+        "question": "What timeline did NASA leadership outline for the Artemis program's key upcoming milestones?",
+        "choices": [
+          {
+            "text": "An Artemis III test flight targeted for 2027, followed by a human lunar surface return in 2028.",
+            "correct": true,
+            "explanation": "NASA Administrator Jared Isaacman and agency leaders detailed acceleration plans targeting an Artemis III test flight in 2027 and returning American astronauts to the Moon's surface during Artemis IV in 2028.",
+            "source": {
+              "label": "NASA Shares Plans to Accelerate Artemis, Return to Moon",
+              "url": "https://www.nasa.gov/missions/artemis/nasa-shares-plans-to-accelerate-artemis-return-to-moon/"
+            }
+          },
+          {
+            "text": "A crewed lunar surface landing targeted for 2025, followed by a permanent Mars outpost flight test in 2026.",
+            "correct": false,
+            "explanation": "The updated timeline sets the Artemis III test flight for 2027 and the human lunar surface return for 2028."
+          },
+          {
+            "text": "An Artemis III test flight targeted for 2028, with the human lunar surface landing deferred until 2032.",
+            "correct": false,
+            "explanation": "The schedule targets Artemis III in 2027, not 2028, and aims for the human surface return in 2028 rather than 2032."
+          },
+          {
+            "text": "An uncrewed orbital test flight in 2026, with all human lunar surface missions postponed indefinitely.",
+            "correct": false,
+            "explanation": "NASA's announced plan accelerates crewed Artemis milestones toward a target Artemis III test flight in 2027 and a human surface landing in 2028."
+          }
+        ]
+      }
+    ],
+    "transcriptUrl": "https://jfunk42.com/podcasts/science-brief/transcripts/2026-11-06-09.html"
+  },
+  {
     "title": "Deciphering Cosmic Frontiers: From Martian Dust to Interstellar Chemistry",
     "publishedAt": "2026-11-02",
     "description": "This episode explores how scientists analyze physical spacesuit samples on Mars, heavy hydrogen in interstellar comet 3I/ATLAS, and deep-space trajectories from the Voyager mission to uncover the environmental conditions of planetary bodies and interstellar space.",
