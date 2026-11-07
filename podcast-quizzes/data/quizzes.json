@@ -1,5 +1,106 @@
 [
   {
+    "title": "Extreme Heat Projections and the Climate-Debt Doom Loop",
+    "publishedAt": "2026-11-07",
+    "description": "This episode examines how projected future heat waves will exceed past extremes in duration, severity, and coverage, while escalating disaster debris and recovery costs threaten to lock nations into a climate-debt doom loop.",
+    "tags": [
+      "Climate Change",
+      "Heat Waves",
+      "Disaster Recovery",
+      "Climate Debt"
+    ],
+    "questions": [
+      {
+        "question": "According to the study led by Philipp Aglas-Leitner at Freie Universit\u00e4t Berlin, how will future warming events compare to recent record-breaking heat waves?",
+        "choices": [
+          {
+            "text": "They will outdo recent record heat waves across three primary dimensions: duration, spatial coverage, and overall severity.",
+            "correct": true,
+            "explanation": "The Aglas-Leitner research demonstrates that recent extreme heat waves are merely a preview of future climate trends and will be exceeded in duration, geographic footprint, and severity as warming progresses.",
+            "source": {
+              "label": "Future warming events will outdo the extreme heat waves of the recent past, new study finds",
+              "url": "https://phys.org/news/2026-11-future-events-outdo-extreme.html"
+            }
+          },
+          {
+            "text": "They are projected to remain within past historical limits while decreasing in geographic coverage.",
+            "correct": false,
+            "explanation": "The study shows that recent heat waves are not upper bounds and that future events will expand across larger geographical areas rather than contracting."
+          },
+          {
+            "text": "They will become shorter in duration due to rapid atmospheric stabilization following localized temperature spikes.",
+            "correct": false,
+            "explanation": "The research established that future heat waves are modeled to endure for extended periods and last longer, rather than becoming shorter."
+          },
+          {
+            "text": "They will affect only localized coastal microclimates without spreading across broader sub-continental regions.",
+            "correct": false,
+            "explanation": "The modeling indicates that future heat waves will spread across entire sub-continents rather than being restricted to localized coastal zones."
+          }
+        ]
+      },
+      {
+        "question": "How does recurring disaster recovery trigger a 'climate-debt doom loop' for vulnerable developing nations?",
+        "choices": [
+          {
+            "text": "Escalating cleanup and infrastructure costs force governments to borrow heavily, increasing debt service burdens and leaving fewer resources for proactive climate adaptation.",
+            "correct": true,
+            "explanation": "The climate-debt doom loop occurs when high emergency cleanup and rebuilding costs force nations to take on public debt, diverting capital into interest payments and leaving them more vulnerable to subsequent events.",
+            "source": {
+              "label": "Disasters and debt. Escaping the 'climate-debt doom loop'",
+              "url": "https://phys.org/news/2026-11-disasters-debt-climate-doom-loop.html"
+            }
+          },
+          {
+            "text": "International disaster relief agencies automatically cancel sovereign debt following major tropical cyclones.",
+            "correct": false,
+            "explanation": "Disaster cleanup forces vulnerable nations into taking on massive public debt rather than having existing sovereign debt automatically canceled by international aid."
+          },
+          {
+            "text": "Disaster recovery expenditures trigger immediate economic deflation, lowering borrowing interest rates for public infrastructure projects.",
+            "correct": false,
+            "explanation": "Recurring disasters increase a nation's borrowing and debt servicing burden, depleting fiscal capacity rather than lowering interest rates or public debt costs."
+          },
+          {
+            "text": "Emergency response spending automatically converts local municipal debt into high-yield sovereign investment funds.",
+            "correct": false,
+            "explanation": "Immediate emergency allocations divert capital away from public investments like healthcare and grid resilience to manage debt, rather than generating sovereign revenue."
+          }
+        ]
+      },
+      {
+        "question": "What main shift in perspective regarding past heat waves does the research published in Nature Communications emphasize?",
+        "choices": [
+          {
+            "text": "Past record heat waves should be treated as a preview of a new baseline rather than upper bounds or statistical outliers.",
+            "correct": true,
+            "explanation": "The study highlights that recent extreme heat waves should not be viewed as once-in-a-century upper limits, but rather as a baseline preview of future climate conditions.",
+            "source": {
+              "label": "Future warming events will outdo the extreme heat waves of the recent past, new study finds",
+              "url": "https://phys.org/news/2026-11-future-events-outdo-extreme.html"
+            }
+          },
+          {
+            "text": "Past record heat waves represent absolute thermodynamic upper bounds that cannot be exceeded under current emissions trends.",
+            "correct": false,
+            "explanation": "The study explicitly refutes the idea that recent heat waves are upper limits, showing that future warming will routinely outdo past records."
+          },
+          {
+            "text": "Recent record heat waves were caused entirely by short-term atmospheric anomalies unrelated to global warming trends.",
+            "correct": false,
+            "explanation": "The research shows that recent heat waves are directly connected to progressing climate change and serve as a preview of ongoing global warming trends."
+          },
+          {
+            "text": "Historical averages from earlier centuries serve as a more reliable operational baseline for modern infrastructure than recent observational data.",
+            "correct": false,
+            "explanation": "The Aglas-Leitner study specifically uses recent extreme heat events as benchmark events to demonstrate how future climate shifts will exceed recent conditions."
+          }
+        ]
+      }
+    ],
+    "transcriptUrl": "https://jfunk42.com/podcasts/science-brief/transcripts/2026-11-07-09.html"
+  },
+  {
     "title": "NASA's Next-Generation Flight Research, Satellite Relays, and Accelerated Artemis Moon Timelines",
     "publishedAt": "2026-11-06",
     "description": "NASA has announced strategic updates across its aerospace operations, including the unveiling of the crewed X-70 Fractal experimental aircraft, commercial awards for Ka-band space relay concepts, and an accelerated schedule targeting an Artemis III test flight in 2027 and a human lunar surface return in 2028.",
