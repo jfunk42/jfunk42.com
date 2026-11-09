@@ -1,5 +1,106 @@
 [
   {
+    "title": "NASA's Moon Base Architecture: Infrastructure, Innovation, and Human Spaceflight",
+    "publishedAt": "2026-11-09",
+    "description": "NASA is advancing its Moon Base strategy by funding commercial surface infrastructure and nuclear rover technology, launching a student design challenge, and recruiting its next astronaut class.",
+    "tags": [
+      "NASA",
+      "Moon Base",
+      "Space Exploration",
+      "Lunar Technology"
+    ],
+    "questions": [
+      {
+        "question": "Why is NASA advancing the development of the nuclear-powered rover PROMISE for lunar surface operations?",
+        "choices": [
+          {
+            "text": "Nuclear radioisotope power provides continuous energy, allowing the rover to operate through the 14-day lunar night independently of solar illumination.",
+            "correct": true,
+            "explanation": "Unlike solar power systems that face severe energy constraints during the two-week lunar night, nuclear radioisotope power generates continuous electrical and thermal energy regardless of daylight.",
+            "source": {
+              "label": "NASA Awards Moon Base Transportation, Technology, Science Projects",
+              "url": "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/"
+            }
+          },
+          {
+            "text": "Nuclear power completely eliminates the need for surface thermal regulation during the extreme heat of the lunar day.",
+            "correct": false,
+            "explanation": "Nuclear surface systems still generate excess heat and require specialized thermal management systems to dissipate heat during the lunar day."
+          },
+          {
+            "text": "Solar panels are incapable of generating electricity anywhere on the Moon's surface.",
+            "correct": false,
+            "explanation": "Solar power has long been used for planetary missions, and solar panels operate effectively on the Moon, particularly near polar regions with continuous sunlight."
+          },
+          {
+            "text": "Using a nuclear power source prevents abrasive lunar regolith dust from damaging mechanical joints and seals.",
+            "correct": false,
+            "explanation": "Lunar regolith causes severe mechanical wear on surface hardware regardless of whether a rover is solar or nuclear-powered."
+          }
+        ]
+      },
+      {
+        "question": "Where was the $1 million Moon Base Student Challenge announced, and what group is eligible to participate?",
+        "choices": [
+          {
+            "text": "At Johnson Space Center in Houston, open exclusively to postgraduate aerospace engineers.",
+            "correct": false,
+            "explanation": "The challenge was announced at the Kennedy Space Center Visitor Complex in Florida and is open to high school and post-secondary students."
+          },
+          {
+            "text": "During a MAX POWER event at the Kennedy Space Center Visitor Complex, open to U.S. high school and post-secondary student teams.",
+            "correct": true,
+            "explanation": "NASA announced the $1 million challenge at the MAX POWER event held at the Kennedy Space Center Visitor Complex in Florida, inviting high school and post-secondary student teams to submit habitat designs.",
+            "source": {
+              "label": "NASA Announces $1 Million to Students for Moon Base Challenge",
+              "url": "https://www.nasa.gov/news-release/nasa-announces-1-million-to-students-for-moon-base-challenge/"
+            }
+          },
+          {
+            "text": "At NASA Headquarters in Washington, open strictly to middle school science classes across North America.",
+            "correct": false,
+            "explanation": "The announcement took place at the Kennedy Space Center Visitor Complex during a MAX POWER event, and eligibility focuses on U.S. high school and post-secondary institutions."
+          },
+          {
+            "text": "Aboard the International Space Station, open only to commercial aerospace contractors.",
+            "correct": false,
+            "explanation": "The competition is an educational outreach initiative for high school and post-secondary students announced at the Kennedy Space Center Visitor Complex."
+          }
+        ]
+      },
+      {
+        "question": "What primary objective has NASA outlined for candidates applying to its newest astronaut class?",
+        "choices": [
+          {
+            "text": "To serve exclusively on low Earth orbit missions aboard commercial space stations.",
+            "correct": false,
+            "explanation": "NASA explicitly noted that the new astronaut class will extend beyond low Earth orbit to build the Moon Base and prepare for Mars."
+          },
+          {
+            "text": "To build the Moon Base on the lunar surface and lay the groundwork for humanity's first crewed missions to Mars.",
+            "correct": true,
+            "explanation": "NASA opened astronaut applications specifically seeking explorers who will help establish a permanent lunar presence and prepare for future crewed expeditions to Mars.",
+            "source": {
+              "label": "NASA Seeks Next Generation of Explorers to Join Astronaut Corps",
+              "url": "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/"
+            }
+          },
+          {
+            "text": "To operate automated deep-space telescopes strictly from Earth-based mission control centers.",
+            "correct": false,
+            "explanation": "The astronaut corps selection process recruits active crew members for human spaceflight missions, not ground-based telescope operators."
+          },
+          {
+            "text": "To replace commercial payload delivery services by piloting robotic cargo landers remotely from Earth.",
+            "correct": false,
+            "explanation": "Commercial delivery capabilities are contracted out to private industry partners, while astronauts are recruited for crewed surface building, research, and exploration missions."
+          }
+        ]
+      }
+    ],
+    "transcriptUrl": "https://jfunk42.com/podcasts/science-brief/transcripts/2026-11-09-09.html"
+  },
+  {
     "title": "Extreme Heat Projections and the Climate-Debt Doom Loop",
     "publishedAt": "2026-11-07",
     "description": "This episode examines how projected future heat waves will exceed past extremes in duration, severity, and coverage, while escalating disaster debris and recovery costs threaten to lock nations into a climate-debt doom loop.",
