@@ -1,5 +1,105 @@
 [
   {
+    "title": "Space Assembly vs. Lunar Moratorium: The Governance of Off-World Infrastructure",
+    "publishedAt": "2026-11-13",
+    "description": "Policy experts and aerospace engineers face off over whether rapid commercial and automated lunar development should proceed or be paused under a global moratorium.",
+    "tags": [
+      "Space Exploration",
+      "Lunar Policy",
+      "In-Space Manufacturing"
+    ],
+    "questions": [
+      {
+        "question": "How does automated in-space assembly, such as the NOM4D initiative, overcome the primary engineering constraints of traditional Earth-launched spacecraft?",
+        "choices": [
+          {
+            "text": "By delivering compact raw materials or modular sub-components into orbit to build structures directly in space, bypassing launch fairing limits and heavy payload fuel penalties.",
+            "correct": true,
+            "explanation": "Constructing hardware directly in orbit allows structures to bypass rocket fairing dimensions and avoid the diminishing returns of launching heavy, fully assembled structures under the rocket equation.",
+            "source": {
+              "label": "Automated assembly in space is the future and NOM4D is showing the way",
+              "url": "https://phys.org/news/2026-11-automated-space-future-nom4d.html"
+            }
+          },
+          {
+            "text": "By developing larger rocket fairings and denser propellants to launch fully constructed steel stations in a single solid piece.",
+            "correct": false,
+            "explanation": "The podcast notes that rocket fairings impose a hard physical ceiling on payload dimensions and the rocket equation makes launching fully constructed massive stations energy prohibitive."
+          },
+          {
+            "text": "By unfurling pre-assembled origami structures on Earth before launching them directly through atmospheric drag.",
+            "correct": false,
+            "explanation": "Origami-style deployment mechanisms are designed to unfurl after reaching space rather than before launch, and they introduce significant failure risk rather than bypassing fairing bottlenecks."
+          },
+          {
+            "text": "By eliminating launch vehicles completely in favor of ground-based orbital elevator tethers.",
+            "correct": false,
+            "explanation": "NOM4D relies on launch vehicles to carry compact raw materials or modular sub-components into space, not orbital elevators."
+          }
+        ]
+      },
+      {
+        "question": "Why do policy researchers Florian Rabitz and Xiao-Shan Yap call for an immediate moratorium on lunar industrialization in Global Environmental Politics?",
+        "choices": [
+          {
+            "text": "They warn that lunar development lacks clear international frameworks for environmental protection, regulatory oversight, and equitable benefit-sharing.",
+            "correct": true,
+            "explanation": "Rabitz and Yap argue that current space law is unprepared for commercial-scale industrialization, creating a risk of an unregulated 'Wild West' resource grab that excludes non-spacefaring nations and damages pristine lunar environments.",
+            "source": {
+              "label": "The moon is not the Wild West: Experts call for a pause on lunar industrialization",
+              "url": "https://phys.org/news/2026-11-moon-wild-west-experts-lunar.html"
+            }
+          },
+          {
+            "text": "They claim that lunar water ice deposits are entirely non-existent, making resource extraction physically impossible.",
+            "correct": false,
+            "explanation": "The researchers do not dispute the existence of water ice; rather, they raise concerns that extracting volatile ice deposits will erase scientific records and exacerbate global inequalities."
+          },
+          {
+            "text": "They seek to permanently ban all scientific research and basic engineering testing conducted by space agencies.",
+            "correct": false,
+            "explanation": "The proposed moratorium specifically targets commercial-scale resource extraction and permanent industrial claims, not scientific research or basic technology development."
+          },
+          {
+            "text": "They argue that automated space manufacturing presents catastrophic atmospheric contamination risks for Earth.",
+            "correct": false,
+            "explanation": "The authors' arguments focus on governance gaps, equity, and environmental preservation on the lunar surface, not atmospheric pollution risks to Earth."
+          }
+        ]
+      },
+      {
+        "question": "What is Katie Spicer's primary role within NASA's Artemis program architecture?",
+        "choices": [
+          {
+            "text": "She serves as the NASA lander integration lead for Blue Origin's Blue Moon Mark 2 lander.",
+            "correct": true,
+            "explanation": "Katie Spicer leads efforts to ensure that Blue Origin's commercial Blue Moon Mark 2 lander interfaces seamlessly with NASA's overall Artemis standards, safety protocols, and operational goals.",
+            "source": {
+              "label": "I Am Artemis Katie Spicer",
+              "url": "https://www.nasa.gov/missions/artemis/i-am-artemis-katie-spicer/"
+            }
+          },
+          {
+            "text": "She is the principal author of the moratorium proposal published in Global Environmental Politics.",
+            "correct": false,
+            "explanation": "The research paper calling for a moratorium was written by policy researchers Florian Rabitz and Xiao-Shan Yap, not Katie Spicer."
+          },
+          {
+            "text": "She leads DARPA's technical team responsible for deploying automated assembly systems under the NOM4D initiative.",
+            "correct": false,
+            "explanation": "Katie Spicer works at NASA on Human Landing System integration for the Blue Moon Mark 2 lander, not on the NOM4D orbital assembly program."
+          },
+          {
+            "text": "She serves as the chief international negotiator for lunar benefit-sharing treaties under the Outer Space Treaty.",
+            "correct": false,
+            "explanation": "Katie Spicer is an engineering integration lead at NASA focusing on lander hardware operations, not an international treaty negotiator."
+          }
+        ]
+      }
+    ],
+    "transcriptUrl": "https://jfunk42.com/podcasts/science-brief/transcripts/2026-11-13-09.html"
+  },
+  {
     "title": "NASA's Moon Base Architecture: Infrastructure, Innovation, and Human Spaceflight",
     "publishedAt": "2026-11-09",
     "description": "NASA is advancing its Moon Base strategy by funding commercial surface infrastructure and nuclear rover technology, launching a student design challenge, and recruiting its next astronaut class.",
