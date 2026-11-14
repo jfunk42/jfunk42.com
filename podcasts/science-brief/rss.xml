@@ -10,7 +10,7 @@
     <description>Short, source-backed briefings on new discoveries in science, space, health, and technology.</description>
     <language>en-us</language>
     <copyright>Copyright 2026 James Funk</copyright>
-    <lastBuildDate>Fri, 13 Nov 2026 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 09:00:00 +0000</lastBuildDate>
     <managingEditor>jfunk42app@gmail.com (James Funk)</managingEditor>
     <webMaster>jfunk42app@gmail.com (James Funk)</webMaster>
     <itunes:title>jFunk42 Science Brief</itunes:title>
@@ -31,6 +31,21 @@
       <title>jFunk42 Science Brief</title>
       <link>https://jfunk42.com/podcasts/science-brief/</link>
     </image>
+
+    <item>
+      <title>Measuring and Scaling Sustainable Agriculture: Data Discrepancies and Social Dynamics</title>
+      <description><![CDATA[This episode examines how data source discrepancies in nitrogen surplus tracking and underdocumented social relationships challenge the effective monitoring and scaling of sustainable agricultural practices.]]></description>
+      <content:encoded><![CDATA[<p>This episode examines how data source discrepancies in nitrogen surplus tracking and underdocumented social relationships challenge the effective monitoring and scaling of sustainable agricultural practices.</p><p><a href="https://jfunk42.com/podcast-quizzes/#Measuring%20and%20Scaling%20Sustainable%20Agriculture%3A%20Data%20Discrepancies%20and%20Social%20Dynamics">Read the sources and take the episode quiz.</a></p><p><a href="https://jfunk42.com/podcasts/science-brief/transcripts/2026-11-14-09.html">Read the full transcript.</a></p>]]></content:encoded>
+      <link>https://jfunk42.com/podcast-quizzes/#Measuring%20and%20Scaling%20Sustainable%20Agriculture%3A%20Data%20Discrepancies%20and%20Social%20Dynamics</link>
+      <guid isPermaLink="false">jfunk42-science-brief-2026-11-14-09</guid>
+      <pubDate>Sat, 14 Nov 2026 09:00:00 +0000</pubDate>
+      <enclosure url="https://podcast.jfunk42.com/jfunk42-science-brief/episodes/2026-11-14-09.mp3" length="11260125" type="audio/mpeg"/>
+      <itunes:title>Measuring and Scaling Sustainable Agriculture: Data Discrepancies and Social Dynamics</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:duration>18:52</itunes:duration>
+      <itunes:image href="https://podcast.jfunk42.com/jfunk42-science-brief/artwork/2026-11-14-09-cover.png"/>
+    </item>
 
     <item>
       <title>Space Assembly vs. Lunar Moratorium: The Governance of Off-World Infrastructure</title>

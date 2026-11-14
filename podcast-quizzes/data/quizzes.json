@@ -1,5 +1,106 @@
 [
   {
+    "title": "Measuring and Scaling Sustainable Agriculture: Data Discrepancies and Social Dynamics",
+    "publishedAt": "2026-11-14",
+    "description": "This episode examines how data source discrepancies in nitrogen surplus tracking and underdocumented social relationships challenge the effective monitoring and scaling of sustainable agricultural practices.",
+    "tags": [
+      "sustainable agriculture",
+      "nitrogen pollution",
+      "agricultural policy",
+      "data monitoring"
+    ],
+    "questions": [
+      {
+        "question": "What major issue did researchers discover when applying five distinct datasets to calculate surplus nitrogen for identical farms in California's Central Valley?",
+        "choices": [
+          {
+            "text": "The five datasets produced conflicting and wildly different surplus nitrogen estimates for the exact same farms.",
+            "correct": true,
+            "explanation": "When the five distinct datasets were applied to identical farms, they failed to yield consistent results and instead produced fundamentally conflicting nitrogen pollution estimates.",
+            "source": {
+              "label": "Same farms, different answers: When nitrogen pollution estimates don't add up",
+              "url": "https://phys.org/news/2026-11-farms-nitrogen-pollution-dont.html"
+            }
+          },
+          {
+            "text": "The datasets proved that synthetic fertilizer has no measurable impact on regional surplus nitrogen levels.",
+            "correct": false,
+            "explanation": "Synthetic fertilizer and livestock waste are recognized as primary sources of nitrogen pollution; the research focused on dataset misalignment rather than claiming fertilizer has no impact."
+          },
+          {
+            "text": "The datasets produced consistent results for conventional farms but failed completely on organic farms.",
+            "correct": false,
+            "explanation": "The discrepancy occurred across identical physical locations generally, not specifically as a failure unique to organic farms."
+          },
+          {
+            "text": "The datasets were unable to capture crop yield data due to a lack of satellite remote sensing capabilities.",
+            "correct": false,
+            "explanation": "The datasets do include detailed operational information such as crop yields and land use; the problem was that combining the inputs led to non-matching nitrogen surplus calculations."
+          }
+        ]
+      },
+      {
+        "question": "How do data collection methods for surplus nitrogen in most parts of the United States differ from those used in California's Central Valley?",
+        "choices": [
+          {
+            "text": "Most regions rely on real-time soil sensors across all watersheds rather than spatial datasets.",
+            "correct": false,
+            "explanation": "Most regions rely on national surveys and censuses rather than mandatory real-time soil sensors in all watersheds."
+          },
+          {
+            "text": "Most regions rely on only one or two national datasets, specifically the USDA agricultural survey and census.",
+            "correct": true,
+            "explanation": "Unlike California's Central Valley, which utilizes five datasets, most U.S. regions estimate surplus nitrogen using just one or two national data sources from the USDA.",
+            "source": {
+              "label": "Same farms, different answers: When nitrogen pollution estimates don't add up",
+              "url": "https://phys.org/news/2026-11-farms-nitrogen-pollution-dont.html"
+            }
+          },
+          {
+            "text": "Most regions combine state fertilizer sales tax records with localized stream water samples.",
+            "correct": false,
+            "explanation": "The transcript notes that most regions depend on the USDA agricultural survey and census, not localized sales tax records combined with stream sampling."
+          },
+          {
+            "text": "Most regions refrain from estimating nitrogen surplus because federal regulations prohibit single-dataset tracking.",
+            "correct": false,
+            "explanation": "Federal regulations do not prohibit tracking; in fact, standard practice across most of the nation is to rely on one or two USDA datasets."
+          }
+        ]
+      },
+      {
+        "question": "What gap in sustainable agricultural literature was identified regarding the scaling of climate-oriented innovations?",
+        "choices": [
+          {
+            "text": "Research projects consistently fail to mention institutional partnerships in their initial funding proposals.",
+            "correct": false,
+            "explanation": "Partnerships and institutional collaboration feature heavily in project proposals and narratives; the gap is that their actual impact on scaling is rarely explicitly documented with empirical evidence."
+          },
+          {
+            "text": "Institutional partnerships were empirically shown to slow down the adoption of new farming practices.",
+            "correct": false,
+            "explanation": "The study did not find that partnerships slow down adoption, but rather pointed out that the empirical relationship between social dynamics and scaling remains underdocumented."
+          },
+          {
+            "text": "The actual relationship between social relationships and the scaling of agricultural innovations is rarely explicitly documented.",
+            "correct": true,
+            "explanation": "Despite frequent assertions that institutional collaboration drives scaling, climate-oriented research rarely collects or presents explicit empirical documentation of how social relationships influence the process.",
+            "source": {
+              "label": "The role of social relationships in scaling agricultural innovations: A dimension that remains underreported in research",
+              "url": "https://phys.org/news/2026-11-role-social-relationships-scaling-agricultural.html"
+            }
+          },
+          {
+            "text": "Farmers refuse to adopt sustainable agricultural technologies unless formal institutional networks are removed.",
+            "correct": false,
+            "explanation": "The transcript highlights that adopting technologies requires human networks and institutional trust, not the removal of institutional networks."
+          }
+        ]
+      }
+    ],
+    "transcriptUrl": "https://jfunk42.com/podcasts/science-brief/transcripts/2026-11-14-09.html"
+  },
+  {
     "title": "Space Assembly vs. Lunar Moratorium: The Governance of Off-World Infrastructure",
     "publishedAt": "2026-11-13",
     "description": "Policy experts and aerospace engineers face off over whether rapid commercial and automated lunar development should proceed or be paused under a global moratorium.",
