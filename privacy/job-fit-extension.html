@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="How the Job Fit Chrome extension stores your resume, skills, Gemini API key, and checked-job history, and what it sends to Google.">
+  <meta name="description" content="How Job Fit protects your profile and job history, sends requested analyses to Gemini, and enters your saved skills/tools on Workday.">
   <link rel="canonical" href="https://jfunk42.com/privacy/job-fit-extension.html">
   <link rel="stylesheet" href="/styles.css">
   <link rel="stylesheet" href="/theme.css">
@@ -14,7 +14,7 @@
     <header class="hero">
       <p class="eyebrow"><a class="text-link" href="/">jFunk42.com</a></p>
       <h1>Job Fit Privacy Policy</h1>
-      <p class="section-copy">Effective November 16, 2026. Encryption applies to version 1.0.4 and later.</p>
+      <p class="section-copy">Effective November 16, 2026. Encryption applies to version 1.0.4 and later. The Workday helper applies to version 1.0.6 and later.</p>
       <p class="lead">Job Fit helps you compare job descriptions with your own resume and skills using
         your Gemini API key. It has no developer-operated backend, analytics, advertising, or account
         system.</p>
@@ -22,8 +22,8 @@
 
     <section class="details">
       <h2>Information you provide and save</h2>
-      <p class="section-copy">The extension saves your resume Markdown, skills, Gemini API key, model
-        preference, and a profile revision in Chrome's local extension storage. A resume may contain
+      <p class="section-copy">The extension saves your resume Markdown, skills, optional Workday Skills / Tools list,
+        Gemini API key, model preference, and a profile revision in Chrome's local extension storage. A resume may contain
         your name, contact details, employment history, education, and any other information you
         choose to include.</p>
       <p class="section-copy">Successful checks save the job URL and title, compatibility score,
@@ -62,7 +62,29 @@
       <p class="section-copy">Opening Job Fit on a page, or requesting selected text, allows it to read
         the active page's job metadata and relevant page text. The right-click command uses the text
         you selected. Job Fit does not run always-on content scripts or collect your general browsing
-        history. It stores URLs only for jobs you successfully score.</p>
+        history. It only adds URLs to persistent history for jobs you successfully score.</p>
+    </section>
+
+    <section class="details">
+      <h2>Workday Skills / Tools entry</h2>
+      <p class="section-copy">You may save a separate list of Workday skill/tool labels in your encrypted profile.
+        Opening the helper explicitly loads that list into a temporary helper on the active
+        HTTPS myworkdayjobs.com or myworkdaysite.com page. The website can read helper text
+        and entered values. Each Search &amp; add click enters one label into the input you select,
+        waits four seconds, and clicks only a single exact visible suggestion that is not already
+        marked selected. Missing or ambiguous matches require your action. The helper does not
+        click application Next or Submit.</p>
+      <p class="section-copy">The helper does not provide your resume, Gemini API key, or vault passphrase to Workday.
+        The separate Workday list is not sent to Gemini by the extension. Information entered on
+        Workday may be autosaved or processed by Workday and the employer under their policies;
+        review the application before submitting.</p>
+      <p class="section-copy">The helper's tab URL and an authorization token are kept temporarily in memory-only
+        extension session storage. The list also exists in the helper's page memory while open.
+        Closing the helper cancels its pending selection. Locking, saving the profile, or clearing
+        data/history invalidates helper authorization and attempts to close open helpers; tab
+        closure removes its temporary state. If a changed page prevents cleanup, refresh or close
+        that tab. These actions do not retract values already entered or information Workday or
+        an employer may have received.</p>
     </section>
 
     <section class="details">
@@ -86,8 +108,8 @@
 
     <section class="details">
       <h2>Purpose and sharing</h2>
-      <p class="section-copy">Job Fit uses this information only to provide the job-fit analysis and
-        history you request. The developer does not receive your profile, API key, job descriptions,
+      <p class="section-copy">Job Fit uses this information only to provide the job-fit analysis, history, and optional
+        Workday skills entry you request. The developer does not receive your profile, API key, job descriptions,
         or history through an extension server. The extension does not sell personal data or use it
         for advertising, credit decisions, or unrelated purposes. AI scores are estimates for your
         own review, not hiring decisions or probabilities.</p>
@@ -96,10 +118,10 @@
     <section class="details">
       <h2>Retention and your controls</h2>
       <p class="section-copy">Your local profile and checked-job history remain until you clear them.
-        You can edit your resume, skills, model preference, or API key in Profile &amp; settings.
+        You can edit your resume, skills, Workday Skills / Tools, model preference, or API key in Profile &amp; settings.
         Clear checked jobs removes history and session job text/results while preserving the
         profile. Delete local data removes the profile, API key, history, and session results.
-        Both clearing actions cancel running analyses. Delete local data also removes the vault and
+        Both clearing actions cancel running analyses and stop Workday helpers. Delete local data also removes the vault and
         its unlocked key; Clear checked jobs keeps the vault unlocked. Uninstalling the extension also removes its
         Chrome-managed local storage, subject to Chrome and device backup behavior.</p>
     </section>
