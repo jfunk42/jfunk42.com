@@ -14,7 +14,7 @@
     <header class="hero">
       <p class="eyebrow"><a class="text-link" href="/">jFunk42.com</a></p>
       <h1>Job Fit Privacy Policy</h1>
-      <p class="section-copy">Effective November 16, 2026</p>
+      <p class="section-copy">Effective November 16, 2026. Encryption applies to version 1.0.4 and later.</p>
       <p class="lead">Job Fit helps you compare job descriptions with your own resume and skills using
         your Gemini API key. It has no developer-operated backend, analytics, advertising, or account
         system.</p>
@@ -30,13 +30,31 @@
         summary, full explanation, model, check date, and profile revision as local checked-job
         history. AI explanations can mention information from your resume. History does not copy
         your full resume, API key, or full job description.</p>
-      <p class="section-copy">Job text, selected text, in-progress state, and errors are stored
-        temporarily in extension session storage. Session data is scoped to the tab and URL and is
-        removed when the tab closes or the browser session ends. Successful results also remain in
-        local checked-job history.</p>
-      <p class="section-copy">This data is not stored using Chrome sync and is not encrypted by the
-        extension. Anyone with sufficient access to your device or browser profile may be able to
-        access it.</p>
+      <p class="section-copy">Profile and checked-job records, including job URLs and titles, are saved
+        together in an encrypted vault, not Chrome sync. Job text, selected text, in-progress state,
+        and errors are held temporarily in Chrome's memory-only extension session storage, scoped
+        to the tab and URL. Tab data is removed when the tab closes; successful results also remain
+        in the encrypted checked-job history.</p>
+    </section>
+
+    <section class="details">
+      <h2>Encryption and unlocking</h2>
+      <p class="section-copy">The vault uses AES-256-GCM authenticated encryption. A key is derived
+        locally from your passphrase using PBKDF2-HMAC-SHA-256 with 600,000 iterations and a random
+        salt. Each write uses a fresh random initialization vector. Your passphrase is never saved
+        by the extension or sent to Google or the developer.</p>
+      <p class="section-copy">While unlocked, the encryption key is held only in Chrome's memory-only
+        extension session storage, restricted to trusted extension contexts. Decrypted information
+        also exists in extension memory and open interface fields. Lock vault now cancels running
+        analyses, clears session data and the unlocked key, and clears open Job Fit interfaces.
+        Fully quitting Chrome also ends the unlocked session. You must enter the passphrase again
+        to access saved data. There is no passphrase recovery; you can delete local data and start over.</p>
+      <p class="section-copy">If upgrading from version 1.0.3 or earlier, existing unencrypted records
+        remain until you create a vault or delete local data. Creating the vault encrypts existing
+        records before removing the legacy plaintext records. This does not securely erase old disk
+        blocks or backups. Original and exported resume Markdown files are outside the vault and
+        are not encrypted by Job Fit. Encryption cannot protect against someone using your unlocked
+        browser or a compromised device.</p>
     </section>
 
     <section class="details">
@@ -81,7 +99,8 @@
         You can edit your resume, skills, model preference, or API key in Profile &amp; settings.
         Clear checked jobs removes history and session job text/results while preserving the
         profile. Delete local data removes the profile, API key, history, and session results.
-        Both clearing actions cancel running analyses. Uninstalling the extension also removes its
+        Both clearing actions cancel running analyses. Delete local data also removes the vault and
+        its unlocked key; Clear checked jobs keeps the vault unlocked. Uninstalling the extension also removes its
         Chrome-managed local storage, subject to Chrome and device backup behavior.</p>
     </section>
 
