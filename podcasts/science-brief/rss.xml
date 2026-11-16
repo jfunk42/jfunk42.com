@@ -10,7 +10,7 @@
     <description>Short, source-backed briefings on new discoveries in science, space, health, and technology.</description>
     <language>en-us</language>
     <copyright>Copyright 2026 James Funk</copyright>
-    <lastBuildDate>Sat, 14 Nov 2026 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 09:00:00 +0000</lastBuildDate>
     <managingEditor>jfunk42app@gmail.com (James Funk)</managingEditor>
     <webMaster>jfunk42app@gmail.com (James Funk)</webMaster>
     <itunes:title>jFunk42 Science Brief</itunes:title>
@@ -31,6 +31,21 @@
       <title>jFunk42 Science Brief</title>
       <link>https://jfunk42.com/podcasts/science-brief/</link>
     </image>
+
+    <item>
+      <title>Mapping Dark Matter with Cosmic Lenses: From Euclid&#x27;s Discovery to Hubble and Roman</title>
+      <description><![CDATA[Recent observational releases from the dark matter-hunting Euclid satellite and the Hubble Space Telescope illustrate how gravitational lenses serve as natural magnifying glasses to map invisible mass and guide upcoming targets for the Nancy Grace Roman Space Telescope.]]></description>
+      <content:encoded><![CDATA[<p>Recent observational releases from the dark matter-hunting Euclid satellite and the Hubble Space Telescope illustrate how gravitational lenses serve as natural magnifying glasses to map invisible mass and guide upcoming targets for the Nancy Grace Roman Space Telescope.</p><p><a href="https://jfunk42.com/podcast-quizzes/#Mapping%20Dark%20Matter%20with%20Cosmic%20Lenses%3A%20From%20Euclid%27s%20Discovery%20to%20Hubble%20and%20Roman">Read the sources and take the episode quiz.</a></p><p><a href="https://jfunk42.com/podcasts/science-brief/transcripts/2026-11-16-09.html">Read the full transcript.</a></p>]]></content:encoded>
+      <link>https://jfunk42.com/podcast-quizzes/#Mapping%20Dark%20Matter%20with%20Cosmic%20Lenses%3A%20From%20Euclid%27s%20Discovery%20to%20Hubble%20and%20Roman</link>
+      <guid isPermaLink="false">jfunk42-science-brief-2026-11-16-09</guid>
+      <pubDate>Mon, 16 Nov 2026 09:00:00 +0000</pubDate>
+      <enclosure url="https://podcast.jfunk42.com/jfunk42-science-brief/episodes/2026-11-16-09.mp3" length="11590581" type="audio/mpeg"/>
+      <itunes:title>Mapping Dark Matter with Cosmic Lenses: From Euclid&#x27;s Discovery to Hubble and Roman</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:duration>19:30</itunes:duration>
+      <itunes:image href="https://podcast.jfunk42.com/jfunk42-science-brief/artwork/2026-11-16-09-cover.png"/>
+    </item>
 
     <item>
       <title>Measuring and Scaling Sustainable Agriculture: Data Discrepancies and Social Dynamics</title>

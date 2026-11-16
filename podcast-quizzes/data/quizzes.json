@@ -1,5 +1,106 @@
 [
   {
+    "title": "Mapping Dark Matter with Cosmic Lenses: From Euclid's Discovery to Hubble and Roman",
+    "publishedAt": "2026-11-16",
+    "description": "Recent observational releases from the dark matter-hunting Euclid satellite and the Hubble Space Telescope illustrate how gravitational lenses serve as natural magnifying glasses to map invisible mass and guide upcoming targets for the Nancy Grace Roman Space Telescope.",
+    "tags": [
+      "gravitational lensing",
+      "dark matter",
+      "Euclid satellite",
+      "Hubble Space Telescope"
+    ],
+    "questions": [
+      {
+        "question": "What major milestone did researchers analyzing observational data from the Euclid satellite recently achieve?",
+        "choices": [
+          {
+            "text": "They identified a record-breaking collection of approximately 15,000 potential strong gravitational lenses in survey data.",
+            "correct": true,
+            "explanation": "Euclid's wide-field sky scan enabled researchers to identify roughly 15,000 candidate strong gravitational lenses, representing the largest single collection of cosmic magnifying glasses ever gathered.",
+            "source": {
+              "label": "Dark matter\u2013hunting satellite Euclid reveals record number of cosmic 'magnifying glasses'",
+              "url": "https://phys.org/news/2026-11-dark-matterhunting-satellite-euclid-reveals.html"
+            }
+          },
+          {
+            "text": "They directly captured light emitted by dark matter particles in the cores of 15,000 elliptical galaxies.",
+            "correct": false,
+            "explanation": "Dark matter does not absorb, reflect, or emit light; lensing maps dark matter through its gravitational influence on light from distant background sources, not by direct particle light capture."
+          },
+          {
+            "text": "They spectroscopically confirmed the exact redshift distance of every candidate lens in the 15,000-system dataset.",
+            "correct": false,
+            "explanation": "The 15,000 identified systems are candidate lenses found via visual and automated screening; multi-wavelength spectroscopic verification across different redshifts is still required."
+          },
+          {
+            "text": "They proved that line-of-sight mass degeneracies have no impact on dark matter mass maps.",
+            "correct": false,
+            "explanation": "Uncorrelated line-of-sight mass structures and mass-sheet degeneracies present ongoing computational modeling challenges that introduce systematic noise into mass maps."
+          }
+        ]
+      },
+      {
+        "question": "How does the Hubble Space Telescope's target sampler of gravitational lenses support the upcoming Nancy Grace Roman Space Telescope mission?",
+        "choices": [
+          {
+            "text": "It provides high-resolution baseline images of diverse lens configurations to help refine modeling algorithms and optimize target selection strategies for Roman.",
+            "correct": true,
+            "explanation": "Hubble's high-resolution sampler illustrates diverse lens structures, helping theoretical astronomers hone mass reconstruction algorithms and calibrate survey target filters for Roman.",
+            "source": {
+              "label": "NASA\u2019s Hubble Offers Cosmic Sampler of Targets for Roman",
+              "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-offers-cosmic-sampler-of-targets-for-roman/"
+            }
+          },
+          {
+            "text": "It automates the subtraction of foreground lens light for all wide-field surveys conducted by Roman.",
+            "correct": false,
+            "explanation": "Foreground lens light subtraction is an analytical modeling challenge that must be customized per system rather than an automated feature provided by Hubble's gallery."
+          },
+          {
+            "text": "It eliminates the need for Roman to conduct wide-field surveys by covering the entire sky with high-resolution imagery.",
+            "correct": false,
+            "explanation": "Hubble's view is inherently narrow and focused on small patches of sky, whereas Roman is built to combine space-based image quality with broad wide-field survey capabilities."
+          },
+          {
+            "text": "It provides spectroscopic confirmation for all potential lenses discovered by ground-based observatories.",
+            "correct": false,
+            "explanation": "Hubble's release is a curated target sampler showcasing structural diversity, not a dedicated spectroscopic clearinghouse for candidate verification."
+          }
+        ]
+      },
+      {
+        "question": "Why do researchers urge caution when interpreting candidate catalogs containing thousands of potential strong gravitational lenses?",
+        "choices": [
+          {
+            "text": "Astronomical configurations such as ring-shaped star-forming galaxies, tidal tails, and chance alignments can mimic lensing arcs.",
+            "correct": true,
+            "explanation": "Automated classification algorithms can flag non-lensing optical structures like face-on ring galaxies or chance geometric alignments as lens candidates, requiring follow-up screening to rule out false positives.",
+            "source": {
+              "label": "Dark matter\u2013hunting satellite Euclid reveals record number of cosmic 'magnifying glasses'",
+              "url": "https://phys.org/news/2026-11-dark-matterhunting-satellite-euclid-reveals.html"
+            }
+          },
+          {
+            "text": "Gravitational lenses can only be verified if dark matter particles emit measurable radio signals.",
+            "correct": false,
+            "explanation": "Dark matter is completely invisible across all electromagnetic wavelengths; lensing verification relies on confirming that the foreground lens and background source lie at distinctly different redshifts."
+          },
+          {
+            "text": "Automated classification pipelines are incapable of detecting arc-shaped light patterns around foreground galaxies.",
+            "correct": false,
+            "explanation": "Machine learning models and automated pipelines are specifically designed to search for arc and ring light patterns around massive foreground objects."
+          },
+          {
+            "text": "Strong gravitational lensing distorts background light only when massive foreground objects contain no dark matter.",
+            "correct": false,
+            "explanation": "Strong gravitational lensing occurs because massive foreground galaxies and clusters are heavily dominated by dark matter, which supplies most of the gravitational mass bending spacetime."
+          }
+        ]
+      }
+    ],
+    "transcriptUrl": "https://jfunk42.com/podcasts/science-brief/transcripts/2026-11-16-09.html"
+  },
+  {
     "title": "Measuring and Scaling Sustainable Agriculture: Data Discrepancies and Social Dynamics",
     "publishedAt": "2026-11-14",
     "description": "This episode examines how data source discrepancies in nitrogen surplus tracking and underdocumented social relationships challenge the effective monitoring and scaling of sustainable agricultural practices.",
